@@ -1,8 +1,9 @@
-import Header from '../header/Header'
+import Header from '../header/Header';
+
 
 const Home = () => {
-    return (
-        <Header />
+    return (	
+        <Header /> 		                   
     )
 }
 

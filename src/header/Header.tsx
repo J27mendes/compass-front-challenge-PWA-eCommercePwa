@@ -1,16 +1,68 @@
 import Styled from "styled-components";
+import Colors from "../Colors";
+import { icons } from "../components/Images";
 
-const StyledMenu = Styled.header`
+const StyledMenu = Styled.header<any>`
+  display: flex;
+  justify-content: space-between; 
+  width: 100%
+  height: 8vh;
+  padding: 1rem;
+  margin-left: 1rem;  
+  .menu-header {
+    display: flex; 
+    align-items: center;
+  }
+  .menu-products {
+    display: flex;    
+    font-family: 'Inter';
+    margin-left: 1rem;
+    color: ${Colors.color_dark}
+  }
+  li {
+    margin-left: 1rem;
+    font-weight: 500;
+
+  }
+  .menu-input {
     display: flex;
-    border: red solid 1px;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+  }
+  .menu-search {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    background-color: ${Colors.color_gray_light};
+    border-radius: 5px;
+    img {
+      padding-left: 1rem;
+    }
+    input{
+      border: none;
+      width: 300px;
+      padding-left: 1rem;
+      background-color: ${Colors.color_gray_light};
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      
+    }
+    input::placeholder {
+      font-family: "Inter", sans-serif;  
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 const Header = () => {
   return (
     <StyledMenu>
-      <div>
-        <img src="./src/assets/home_web/header/logo.svg" alt="logo Cora'l" />
-        <ul>
+      <div className="menu-header">
+        <img src={icons.Logo} alt="logo Cora'l" />
+        <ul className="menu-products">
           <li>Handbags</li>
           <li>Watches</li>
           <li>Skincare</li>
@@ -18,12 +70,14 @@ const Header = () => {
           <li>Apperels</li>
         </ul>
       </div>
-      <div>
-        <img alt=""/>
-        <input placeholder="Search for products or brands....." />
-        <img alt=""/>
-        <img alt=""/>
-        <img alt=""/>
+      <div className="menu-input">
+        <div className="menu-search">
+          <img src={icons.Search} alt="Icone de Lupa"/>
+          <input placeholder="Search for products or brands....." />
+        </div>
+        <img src={icons.Like} alt="Icone de coração"/>
+        <img src={icons.User} alt="Icone de busto"/>
+        <img src={icons.Bag} alt="Icone de bolsa"/>
       </div>
     </StyledMenu>
   );
