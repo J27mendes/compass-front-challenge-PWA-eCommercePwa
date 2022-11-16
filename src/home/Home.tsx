@@ -1,3 +1,4 @@
+import Banner from '../banner/Banner';
 import Header from '../header/Header';
 import Status from '../status/Status';
 
@@ -7,6 +8,7 @@ const Home = () => {
 		<>	
 			<Header /> 
 			<Status />	
+			<Banner />
 		</>	                   
     )
 }
