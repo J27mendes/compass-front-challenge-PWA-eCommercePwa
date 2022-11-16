@@ -2,7 +2,7 @@ import Styled from "styled-components";
 import Colors from "../Colors";
 import { icons } from "../components/Images";
 
-const StyledMenu = Styled.header<any>`
+const StyledMenu = Styled.header`
   display: flex;
   justify-content: space-between; 
   width: 100%
@@ -17,7 +17,7 @@ const StyledMenu = Styled.header<any>`
     display: flex;    
     font-family: 'Inter';
     margin-left: 1rem;
-    color: ${Colors.color_dark}
+    color: ${Colors.dark}
   }
   li {
     margin-left: 1rem;
@@ -34,16 +34,16 @@ const StyledMenu = Styled.header<any>`
     display: flex;
     align-items: center;
     height: 7vh;
-    background-color: ${Colors.color_gray_light};
+    background-color: ${Colors.grey};
     border-radius: 5px;
     img {
       padding-left: 1rem;
     }
     input{
       border: none;
-      width: 300px;
+      width: 320px;
       padding-left: 1rem;
-      background-color: ${Colors.color_gray_light};
+      background-color: ${Colors.grey};
       font-family: "Inter", sans-serif;
       font-weight: 600;
       font-size: 0.9rem;

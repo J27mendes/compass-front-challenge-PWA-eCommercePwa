@@ -1,22 +1,33 @@
 const Colors: any = {
-    color_primary: "#1B4B66",
+    primary: "#1B4B66",
+    primary_tinty: "#639599",
     color_banner: "#97451F",
-    color_handpicked: "#171520",
-    color_dark: "#13101E",
-    color_placeholder: "#626262",
-    color_white: "#ffffff",
-    color_banner_red: "#A53F64",
-    color_gray_light: "#F1F1F1"
+    high_emphasis: "#171520",
+    low_emphasis: "#626262",
+    dark: "#13101E",
+    bright: "#ffffff",
+    banner_red: "#A53F64",
+    grey: "#F1F1F1",
+    light_text: "#B6B6B6",
+    error: "#B00020",
+    highlight: "#FF8C4B",
+    acent: "#F4F4F4",
 }
 
 export interface PropColors {
-    color_primary?: String,
+    primary?: String,
+    primary_tinty?: String,
     color_banner?: String,
-    color_handpicked?: String,
-    color_dark?: String,
-    color_placeholder?: String,
-    color_white?: String,
-    color_banner_red?: String
+    high_emphasis?: String,
+    low_emphasis?: String,
+    dark?: String,
+    bright?: String,
+    banner_red?: String,
+    grey?: String,
+    light_text?: String,
+    error?: String,
+    highlight?: String,
+    acent?: String
 }
 
 export default Colors
