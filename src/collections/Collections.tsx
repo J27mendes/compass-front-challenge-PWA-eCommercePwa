@@ -20,7 +20,6 @@ const StyledCollections = Styled.section`
             img {
                 border-radius: 16px;
                 margin-bottom: -2.8rem;
-
             }
             p {
                 font-family: "Inter";

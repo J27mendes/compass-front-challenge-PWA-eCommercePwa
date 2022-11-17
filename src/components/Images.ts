@@ -8,7 +8,7 @@ import Image_banner from '../assets/home_web/header/image_banner.png';
 import Image_skincare from '../assets/home_web/header/image_skincare.svg';
 import Image_shop from '../assets/home_web/header/image_shop.svg';
 import Image_creme from '../assets/home_web/header/image_creme.png';
-import Zara from '../assets/home_web/shop/biba.svg';
+import Zara from '../assets/home_web/shop/zara.svg';
 import Prada from '../assets/home_web/shop/prada.svg';
 import HeM from '../assets/home_web/shop/HeM.svg';
 import DeG from '../assets/home_web/shop/DeG.svg';
