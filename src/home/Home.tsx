@@ -1,5 +1,6 @@
 import Banner from '../banner/Banner';
 import Collections from '../collections/Collections';
+import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import NewArrivals from '../new_arrivals/New_Arrivals';
 import Shop from '../shop/Shop';
@@ -15,6 +16,7 @@ const Home = () => {
 			<NewArrivals />
 			<Collections />
 			<Shop />
+			<Footer />
 		</>	                   
     )
 }
