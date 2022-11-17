@@ -16,7 +16,7 @@ const StyledBanner = Styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 640px;
+        width: 630px;
         height: 52vh;
         background-color: ${Colors.grey};
         opacity: 0.8;
