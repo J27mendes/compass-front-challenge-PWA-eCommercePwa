@@ -37,6 +37,8 @@ import Grid from '../assets/category_web/grid.svg';
 import Star from '../assets/category_web/star.svg';
 import Star_full from '../assets/category_web/star_full.svg';
 import Cut_arrow_black from '../assets/category_web/cut_arrow_black.svg';
+import Plus from '../assets/category_web/plus.svg';
+import Minus from '../assets/category_web/minus.svg';
 
 export const icons = {
   Logo, 
@@ -58,7 +60,9 @@ export const icons = {
   Star,
   Star_full,
   Grid,
-  Grid_grey 
+  Grid_grey,
+  Plus,
+  Minus 
 }
 
 export const marks = {
@@ -80,6 +84,7 @@ export const products = {
     Duffle_1,
     Irene_unsplash_2
 }
+
 export const imgs = {
     Image_banner,
     Image_shop,

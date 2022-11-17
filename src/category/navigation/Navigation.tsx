@@ -19,11 +19,9 @@ const StyledNavigation = Styled.div`
     .navigation-next-page {
         font-family: "Inter";
         font-weight: 500;
-        color: ${Colors.dark};
+        color: ${Colors.low_emphasis};
         margin-right: 1rem;
-
     }
-    
 `;
 
 const Navigation = () => {

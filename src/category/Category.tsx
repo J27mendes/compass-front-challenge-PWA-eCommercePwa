@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import { imgs } from "../components/Images";
 import Footer from "../footer/Footer"
 import Header from "../header/Header"
+import InfoProducts from "./info_products/Info_Products";
 import Navigation from "./navigation/Navigation";
 
 const StyledCategory = Styled.section`
@@ -15,7 +16,8 @@ const Category = () => {
             <StyledCategory>
                 <img src={imgs.Banner_category} alt="imagem de bolsa preta"/>
             </StyledCategory> 
-            <Navigation />           
+            <Navigation /> 
+            <InfoProducts />          
             <Footer />
         </>
     )
