@@ -39,7 +39,7 @@ const StyledBanner = Styled.div`
         }        
     }
     
-`
+`;
 const Banner = () => {
     return (
         <StyledBanner>

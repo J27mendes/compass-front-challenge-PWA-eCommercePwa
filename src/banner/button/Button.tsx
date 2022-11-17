@@ -21,7 +21,7 @@ const StyledButtonBanner = Styled.div`
                 padding: 0.2rem;
             }         
         }     
-`
+`;
 
 const ButtonBanner = () => {
     return (
