@@ -1,6 +1,7 @@
 import Logo from '../assets/home_web/header/logo.svg';
 import Search from '../assets/home_web/icons/search.svg';
 import Like from '../assets/home_web/icons/like.svg';
+import Like_black from '../assets/home_web/icons/like_black.svg';
 import User from '../assets/home_web/icons/user.svg';
 import Bag from '../assets/home_web/icons/bag.svg';
 import Image_banner from '../assets/home_web/header/image_banner.png';
@@ -34,7 +35,9 @@ import Youtube from '../assets/footer/youtube.svg'
 export const icons = {
   Logo, 
   Search, 
-  Like, User, 
+  Like,
+  Like_black, 
+  User, 
   Bag, 
   Youtube, 
   Twitter, 

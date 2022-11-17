@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../Colors";
 import { icons } from "../components/Images";
+import ArrivalsCard from "./arrivals_card/Arrivals_Card";
 
 const StyledNewArrivals = Styled.div`
     margin-top: 5rem;
@@ -35,6 +36,7 @@ const StyledNewArrivals = Styled.div`
 
 const NewArrivals = () => {
     return (
+        <>
         <StyledNewArrivals>
             <div className="arrivals">
                 <h2>New Arrivals</h2>
@@ -43,7 +45,9 @@ const NewArrivals = () => {
                    <img src={icons.Cut_arrow} alt="icone de maior Q"/>
                 </div>
             </div>            
-        </StyledNewArrivals>        
+        </StyledNewArrivals>
+        <ArrivalsCard />  
+        </>     
     )
 }
 export default NewArrivals
