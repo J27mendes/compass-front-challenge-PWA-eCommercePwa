@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../Colors";
 import { marks } from "../components/Images";
+import BannerShop from "./banner_shop/Banner_Shop";
 
 const StyledShop = Styled.section`
 padding-bottom: 4rem;
@@ -31,30 +32,32 @@ padding-bottom: 4rem;
 
 const Shop = () => {
     return (
-        <StyledShop>
-            <h2>Shop by brands</h2>
-            <div className="cards-shop">
-                <div className="shop">
-                    <img src={marks.Zara} alt="logo da loja zara"/>
-                </div>
-                <div className="shop">
-                    <img src={marks.DeG} alt="logo da loja zara"/>
-                </div>
-                <div className="shop">
-                    <img src={marks.HeM} alt="logo da loja zara"/>
-                </div>
-                <div className="shop">
-                    <img src={marks.Chanel} alt="logo da loja zara"/>
-                </div>
-                <div className="shop">
-                    <img src={marks.Prada} alt="logo da loja zara"/>
-                </div>
-                <div className="shop">
-                    <img src={marks.Biba} alt="logo da loja zara"/>
-                </div>
-            </div>
-            
-        </StyledShop>
+        <>
+            <StyledShop>
+                <h2>Shop by brands</h2>
+                <div className="cards-shop">
+                    <div className="shop">
+                        <img src={marks.Zara} alt="logo da loja zara"/>
+                    </div>
+                    <div className="shop">
+                        <img src={marks.DeG} alt="logo da loja zara"/>
+                    </div>
+                    <div className="shop">
+                        <img src={marks.HeM} alt="logo da loja zara"/>
+                    </div>
+                    <div className="shop">
+                        <img src={marks.Chanel} alt="logo da loja zara"/>
+                    </div>
+                    <div className="shop">
+                        <img src={marks.Prada} alt="logo da loja zara"/>
+                    </div>
+                    <div className="shop">
+                        <img src={marks.Biba} alt="logo da loja zara"/>
+                    </div>
+                </div>            
+            </StyledShop>
+            <BannerShop />
+        </>
     )
 }
 

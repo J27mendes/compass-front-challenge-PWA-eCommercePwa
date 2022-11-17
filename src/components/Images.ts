@@ -5,9 +5,9 @@ import Like_black from '../assets/home_web/icons/like_black.svg';
 import User from '../assets/home_web/icons/user.svg';
 import Bag from '../assets/home_web/icons/bag.svg';
 import Image_banner from '../assets/home_web/header/image_banner.png';
-import Image_skincare from '../assets/home_web/header/image_skincare.svg';
-import Image_shop from '../assets/home_web/header/image_shop.svg';
-import Image_creme from '../assets/home_web/header/image_creme.png';
+import Image_skincare from '../assets/home_web/header/image_skincare.png';
+import Creme from '../assets/home_web/header/creme.png';
+import Image_shop from '../assets/home_web/header/image_shop.png';
 import Zara from '../assets/home_web/shop/zara.svg';
 import Prada from '../assets/home_web/shop/prada.svg';
 import HeM from '../assets/home_web/shop/HeM.svg';
@@ -71,7 +71,7 @@ export const products = {
 }
 export const imgs = {
     Image_banner,
-    Image_creme,
     Image_shop,
-    Image_skincare
+    Image_skincare,
+    Creme
 }

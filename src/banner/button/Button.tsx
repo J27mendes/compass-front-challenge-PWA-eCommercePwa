@@ -1,5 +1,5 @@
 import Styled from "styled-components";
-import { icons } from "../../components/Images"
+import { icons } from "../../components/Images";
 import Colors from "../../Colors";
 
 const StyledButtonBanner = Styled.div`

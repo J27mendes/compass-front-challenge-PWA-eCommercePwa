@@ -4,7 +4,7 @@ import { icons } from "../components/Images";
 import ArrivalsCard from "./arrivals_card/Arrivals_Card";
 
 const StyledNewArrivals = Styled.div`
-    margin-top: 5rem;
+    margin-top: 4rem;
     .arrivals {
         display: flex;
         justify-content: space-between;
