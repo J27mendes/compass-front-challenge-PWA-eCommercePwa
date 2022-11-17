@@ -31,6 +31,12 @@ import Instagran from '../assets/footer/instagran.svg';
 import Location from '../assets/footer/location.svg';
 import Twitter from '../assets/footer/twitter.svg';
 import Youtube from '../assets/footer/youtube.svg'
+import Banner_category from '../assets/category_web/hero.png';
+import Grid_grey from '../assets/category_web/grid_grey.svg';
+import Grid from '../assets/category_web/grid.svg';
+import Star from '../assets/category_web/star.svg';
+import Star_full from '../assets/category_web/star_full.svg';
+import Cut_arrow_black from '../assets/category_web/cut_arrow_black.svg';
 
 export const icons = {
   Logo, 
@@ -47,7 +53,12 @@ export const icons = {
   Arrow_transparent, 
   Circle_arrow_blue, 
   Circle_arrow_red,
-  Cut_arrow 
+  Cut_arrow_black,
+  Cut_arrow,
+  Star,
+  Star_full,
+  Grid,
+  Grid_grey 
 }
 
 export const marks = {
@@ -73,5 +84,6 @@ export const imgs = {
     Image_banner,
     Image_shop,
     Image_skincare,
-    Creme
+    Creme,
+    Banner_category
 }
