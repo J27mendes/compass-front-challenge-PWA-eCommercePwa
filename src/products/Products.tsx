@@ -3,6 +3,7 @@ import Colors from "../Colors";
 import { icons } from "../components/Images";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import ProductsImage from "./products_image/Products_image";
 
 const StyledProducts = Styled.section`
     display: flex;
@@ -36,6 +37,7 @@ const Products = () => {
                     <img src={icons.Cut_arrow_black} alt="sinal de maior q"/> 
                     <p className="navigation-next-page">Label</p>
             </StyledProducts>
+            <ProductsImage />
             <Footer />
         </>
     )
