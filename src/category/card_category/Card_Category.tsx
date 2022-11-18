@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../../Colors";
 import { icons, products } from "../../components/Images";
+import Marking from "./pages_marking/Pages_Marking";
 
 const StyledCardCategory = Styled.div`
     display: flex;
@@ -260,7 +261,8 @@ const CardCategory = () => {
                         <p className="price-descont">50% OFF</p>
                     </div>
                 </div>
-            </StyledCardCategory>   
+            </StyledCardCategory> 
+            <Marking />  
         </>     
     )
 }
