@@ -1,9 +1,9 @@
 import Styled from "styled-components";
 import Colors from "../../Colors";
 import { icons } from "../../components/Images";
+import CardCategory from "../card_category/Card_Category";
 
 const StyledCategorySearch = Styled.section`
-  border: solid 1px red; 
   width: 78%;
   margin-top: 5rem;
   margin-left: 2rem;
@@ -83,8 +83,9 @@ const CategorySearch = () => {
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-            </div>            
-        </StyledCategorySearch>        
+            </div>  
+            <CardCategory />           
+        </StyledCategorySearch> 
     )
 }
 

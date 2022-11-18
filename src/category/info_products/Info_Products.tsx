@@ -31,8 +31,8 @@ const StyledInfoProducts = Styled.section`
     }`;  
     
     const StyledContainer = Styled.section`
-        display: flex
-    `
+        display: flex;
+    `;
 
 
 const InfoProducts = () => {

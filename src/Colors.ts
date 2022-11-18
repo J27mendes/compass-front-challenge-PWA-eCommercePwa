@@ -12,6 +12,7 @@ const Colors: any = {
     error: "#B00020",
     highlight: "#FF8C4B",
     acent: "#F4F4F4",
+    red: "#f31a1a"
 }
 
 export interface PropColors {
@@ -27,7 +28,8 @@ export interface PropColors {
     light_text?: String,
     error?: String,
     highlight?: String,
-    acent?: String
+    acent?: String,
+    red?: String
 }
 
 export default Colors
