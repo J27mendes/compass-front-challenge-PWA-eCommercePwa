@@ -12,7 +12,6 @@ const StyledMarking = Styled.div`
         background-color: ${Colors.grey};
         border-radius: 10px;
         padding: 0.2rem;
-        font-family: "Inter";
         font-size: 0.8rem;
         .marking {
             background-color: ${Colors.primary};
@@ -30,7 +29,6 @@ const StyledMarking = Styled.div`
     .card-pages-next {
         margin-left: 1rem;
         padding: 0.7rem 1.2rem;
-        font-family: "Inter";
         font-size: 0.8rem;
         background-color: ${Colors.grey};
         color: ${Colors.low_emphasis};

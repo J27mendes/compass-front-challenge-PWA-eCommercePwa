@@ -6,7 +6,6 @@ const StyledCollections = Styled.section`
     background-color: ${Colors.primary};
     padding-bottom: 4rem;
     h2 {
-        font-family: "Inter";
         font-size: 2.2rem;
         font-weight: 600;
         padding: 2rem 0 2rem 2rem;
@@ -22,7 +21,6 @@ const StyledCollections = Styled.section`
                 margin-bottom: -2.8rem;
             }
             p {
-                font-family: "Inter";
                 font-size: 1.5rem;
                 font-weight: 600;
                 margin-left: 1rem;

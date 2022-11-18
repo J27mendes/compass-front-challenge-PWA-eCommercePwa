@@ -15,7 +15,6 @@ const StyledMenu = Styled.header`
   }
   .menu-products {
     display: flex;    
-    font-family: 'Inter';
     margin-left: 1rem;
     color: ${Colors.dark}
   }
@@ -44,13 +43,11 @@ const StyledMenu = Styled.header`
       width: 320px;
       padding-left: 1rem;
       background-color: ${Colors.grey};
-      font-family: "Inter", sans-serif;
       font-weight: 600;
       font-size: 0.9rem;
       
     }
     input::placeholder {
-      font-family: "Inter", sans-serif;  
       font-weight: 500;
       font-size: 0.9rem;
     }

@@ -17,14 +17,12 @@ const StyledCategorySearch = Styled.section`
         margin-right: 0.5rem;
     }
     .category-amount-items {
-        font-family: "Inter";
         font-size: 1rem;
         font-weight: 500;
         color: ${Colors.dark};
         margin-right: 6rem;
     } 
     .category-show {
-        font-family: "Inter";
         font-size: 1rem;
         font-weight: 500;
         color: ${Colors.dark};
@@ -36,12 +34,10 @@ const StyledCategorySearch = Styled.section`
         background-color: ${Colors.grey};
         border-radius: 5px;
         text-align: center;
-        padding: 1.2rem 1.4rem;
-        font-family: "Inter"; 
+        padding: 1.2rem 1.4rem; 
     }
     .category-sort {
         margin-left: 2rem;
-        font-family: "Inter";
         font-size: 1rem;
         font-weight: 500;
         color: ${Colors.dark};
@@ -50,7 +46,6 @@ const StyledCategorySearch = Styled.section`
     select {
         background-color: ${Colors.grey};
         border: none;
-        font-family: "Inter";
         font-size: 1rem;
         font-weight: 500;
         color: ${Colors.low_emphasis};

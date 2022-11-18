@@ -10,7 +10,6 @@ const StyledFooter = Styled.section`
     .footer-lists {
         display: flex;
         margin-top: 2rem;
-        font-family: "Inter";
         ul {
             margin-left: 4rem;
             color: ${Colors.grey};
@@ -38,7 +37,6 @@ const StyledFooter = Styled.section`
             margin-bottom: 1rem;
             justify-content: flex-end;
             align-items: center;
-            font-family: "Inter";
             font-size: 0.9rem;
             img {
                 margin-right: 0.5rem;
@@ -48,7 +46,6 @@ const StyledFooter = Styled.section`
             }
         }
         p {
-            font-family: "Inter";
             font-size: 0.9rem;
             color: ${Colors.light_text}
         }

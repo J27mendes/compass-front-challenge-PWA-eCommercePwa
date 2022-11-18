@@ -17,12 +17,11 @@ const StyledCardCategory = Styled.div`
             display: flex;
             justify-content: space-between;
             .category-products-amount {
-                font-family: "Inter";
+
                 font-weight: 500;
             }
         }
         .category-products-name {
-            font-family: "Inter";
             color: ${Colors.low_emphasis};
             font-size: 0.9rem;
             font-weight: 500;
@@ -32,7 +31,6 @@ const StyledCardCategory = Styled.div`
             align-items: center;
             margin-top: 0.5rem;
             .category-products-ratings {
-                font-family: "Inter";
                 color: ${Colors.primary};
                 font-size: 0.9rem;
                 font-weight: 600;
@@ -43,7 +41,6 @@ const StyledCardCategory = Styled.div`
             display: flex;
             align-items: flex-start;
             .price-real {
-                font-family: "Inter";
                 color: ${Colors.dark};
                 font-weight: 600;
                 margin-right: 0.4rem;
@@ -52,13 +49,11 @@ const StyledCardCategory = Styled.div`
                 text-decoration: line-through;
                 color: ${Colors.low_emphasis};
                 font-size: 0.8rem;
-                font-family: "Inter";
                 font-weight: 500;
                 margin-right: 0.4rem;
             }
             .price-descont {
                 color: ${Colors.red};
-                font-family: "Inter";
                 font-weight: 500;
             }
         } 

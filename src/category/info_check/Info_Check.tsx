@@ -15,7 +15,6 @@ fieldset {
                 height: 18px;
             }
             label {
-                font-family: "Inter";
                 font-weight: 500;
                 margin-left: 0.3rem;
                 color: ${Colors.low_emphasis}

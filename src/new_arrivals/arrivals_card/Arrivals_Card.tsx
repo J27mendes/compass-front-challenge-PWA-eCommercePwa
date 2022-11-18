@@ -18,19 +18,16 @@ const StyledArrivalsCard = Styled.section`
         display: flex;
         justify-content: space-between;
         .arrivals-info {
-            font-family: "inter";
             font-size: 1rem;
             font-weight: 600;
         }
     }
     .arrivals-name {
-        font-family: "Inter";
         font-size: 0.9rem;
         color: ${Colors.low_emphasis}
     }
     .arrivals-price {
         margin-top: 0.8rem;
-        font-family: "inter";
         font-size: 1rem;
         font-weight: 600;
     }

@@ -8,7 +8,6 @@ const StyledInfoProducts = Styled.section`
     width: 22%;
     margin-left: 2rem;  
     h2 {
-        font-family: "Inter";
         font-size: 2.1rem;
         color: ${Colors.primary};
         font-weight: 600;
@@ -18,7 +17,6 @@ const StyledInfoProducts = Styled.section`
         display: flex;
         justify-content: space-between;
         p {
-            font-family: "Inter";
             color: ${Colors.dark};
             font-size: 1rem;
             font-weight: 600;            

@@ -8,7 +8,6 @@ const StyledNavigation = Styled.div`
     margin-top: 4rem;
     margin-bottom: 2rem;
     .navigation-first-page {
-        font-family: "Inter";
         font-weight: 600;
         color: ${Colors.primary};
         margin-right: 1rem;
@@ -17,7 +16,6 @@ const StyledNavigation = Styled.div`
         margin-right: 1rem;
     }
     .navigation-next-page {
-        font-family: "Inter";
         font-weight: 500;
         color: ${Colors.low_emphasis};
         margin-right: 1rem;

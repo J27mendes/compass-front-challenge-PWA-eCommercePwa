@@ -10,7 +10,6 @@ const StyledNewArrivals = Styled.div`
         justify-content: space-between;
         align-items: center;
         h2{
-            font-family: "Inter";
             font-size: 2.2rem;
             font-weight: 600;
             color: ${Colors.dark};
@@ -20,9 +19,8 @@ const StyledNewArrivals = Styled.div`
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            p {
+            p {                
                 font-size: 0.9rem;
-                font-family: "Inter";
                 margin-right: 1rem;
                 color: ${Colors.primary};
                 font-weight: 600;

@@ -25,13 +25,11 @@ const StyledBanner = Styled.div`
         h2 {
             color: ${Colors.primary};
             font-size: 4rem;
-            font-family: "inter";
             font-weight: 800;
         }
         p {
             color: ${Colors.primary};
             font-size: 1.9rem;
-            font-family: "inter";
             font-weight: 500;
             width: 560px;
             margin: 1.6rem 0 1.6rem 0;

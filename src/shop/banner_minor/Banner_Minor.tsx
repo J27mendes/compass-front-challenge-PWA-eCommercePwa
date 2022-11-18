@@ -22,7 +22,6 @@ const StyledBannerMinor = Styled.div`
             p {
                 width: 200px;
                 text-align: right;
-                font-family: "Inter";
                 font-size: 2.4rem;
                 font-weight: 800;
                 line-height: 3rem;
@@ -31,7 +30,6 @@ const StyledBannerMinor = Styled.div`
             .banner-minor-peels {
                 width: 200px;
                 text-align: right;
-                font-family: "Inter";
                 font-size: 2.4rem;
                 font-weight: 800;
                 line-height: 3rem;

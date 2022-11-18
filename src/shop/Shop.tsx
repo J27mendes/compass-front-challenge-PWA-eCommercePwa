@@ -8,7 +8,6 @@ padding-bottom: 4rem;
     h2 {
         margin-top: 4rem;
         margin-left: 2rem;
-        font-family: "inter";
         font-size: 2.2rem;
         font-weight: 600;
         color: ${Colors.dark};

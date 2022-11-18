@@ -5,7 +5,6 @@ const StyledStatus = Styled.div`
     display flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter";
     font-weight: 400;
     height: 8vh;
     background-color: ${Colors.grey}; 

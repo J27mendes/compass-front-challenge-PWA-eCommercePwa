@@ -11,13 +11,11 @@ const StyledBannerShop = Styled.div`
     .shop-lifestyle {
         margin-right: -36rem;
         h2 {
-            font-family: "Inter";
             font-size: 1.8rem;
             font-weight: 500;
             color: ${Colors.color_banner};
         }
         p {
-            font-family: "Inter";
             width: 540px;
             font-size: 3.1rem;
             font-weight: 700;
