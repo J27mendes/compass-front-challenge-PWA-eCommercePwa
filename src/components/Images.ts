@@ -39,6 +39,7 @@ import Star_full from '../assets/category_web/star_full.svg';
 import Cut_arrow_black from '../assets/category_web/cut_arrow_black.svg';
 import Plus from '../assets/category_web/plus.svg';
 import Minus from '../assets/category_web/minus.svg';
+import Error404 from '../assets/error/error.svg';
 
 export const icons = {
   Logo, 
@@ -90,5 +91,6 @@ export const imgs = {
     Image_shop,
     Image_skincare,
     Creme,
-    Banner_category
+    Banner_category,
+    Error404
 }

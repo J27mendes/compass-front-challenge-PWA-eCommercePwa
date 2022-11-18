@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import { icons } from "../../components/Images";
 import Colors from "../../Colors";
+import { CategoryRoute } from "../../routes/Routes";
 
 const StyledButtonBanner = Styled.div`
     button {                
@@ -14,6 +15,7 @@ const StyledButtonBanner = Styled.div`
             font-weight: 500;
             text-align: center; 
             position: relative;
+            cursor: pointer;
             img {
                 width: 1rem;
                 float: left; 
@@ -26,9 +28,8 @@ const StyledButtonBanner = Styled.div`
 const ButtonBanner = () => {
     return (
         <StyledButtonBanner>
-            <button type="button"><img className="banner-arrow" src={icons.Arrow_transparent} alt="icone de flecha"/>See more</button>
+            <button onClick={() => CategoryRoute()} type="button"><img className="banner-arrow" src={icons.Arrow_transparent} alt="icone de flecha"/>See more</button>
         </StyledButtonBanner>
-
     )
 }
 export default ButtonBanner

@@ -43,13 +43,16 @@ const StyledMenu = Styled.header`
       width: 320px;
       padding-left: 1rem;
       background-color: ${Colors.grey};
-      font-weight: 600;
+      font-weight: 500;
       font-size: 0.9rem;
       
     }
     input::placeholder {
       font-weight: 500;
       font-size: 0.9rem;
+    }
+    input:focus {
+    outline: 0;
     }
   }
 `;
