@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../../Colors";
 import { icons } from "../../components/Images";
+import ProductDelivery from "../products_delivery/Products_Delivery";
 
 const StyledProductsDetails = Styled.section`
 width: 650px;
@@ -54,7 +55,7 @@ width: 650px;
 `;
 
 const ProductsDetails = () => {
-    return (
+    return (        
         <StyledProductsDetails>                            
             <p className="product-details-name">Coach</p>                                   
             <p className="product-details-description">Leather Coach Bag with adjustable starps</p>            
@@ -72,7 +73,8 @@ const ProductsDetails = () => {
                 <p className="product-price-descont">50% OFF</p>
             </div>
             <hr />
-        </StyledProductsDetails>        
+            <ProductDelivery />
+        </StyledProductsDetails>     
     )
 }
 export default ProductsDetails
