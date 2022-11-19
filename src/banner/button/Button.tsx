@@ -28,7 +28,7 @@ const StyledButtonBanner = Styled.div`
 const ButtonBanner = () => {
     return (
         <StyledButtonBanner>
-            <button onClick={() => CategoryRoute()} type="button"><img className="banner-arrow" src={icons.Arrow_transparent} alt="icone de flecha"/>See more</button>
+            <button onClick={() => CategoryRoute()}><img className="banner-arrow" src={icons.Arrow_transparent} alt="icone de flecha"/>See more</button>
         </StyledButtonBanner>
     )
 }

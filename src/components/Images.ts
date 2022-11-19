@@ -43,6 +43,7 @@ import Error404 from '../assets/error/error.svg';
 import Arrow_left from '../assets/home_web/icons/arrow_left.svg';
 import Star_light from '../assets/home_web/icons/star_light.svg';
 import Star_low from '../assets/home_web/icons/star_low.svg';
+import Bag_white from '../assets/home_web/icons/bag_white.svg';
 
 export const icons = {
   Logo, 
@@ -69,7 +70,8 @@ export const icons = {
   Minus,
   Arrow_left,
   Star_light,
-  Star_low 
+  Star_low,
+  Bag_white 
 }
 
 export const marks = {

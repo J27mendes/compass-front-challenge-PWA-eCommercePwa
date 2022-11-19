@@ -1,6 +1,8 @@
 import Styled from "styled-components";
 import Colors from "../../Colors";
+import ProductsButtons from "../products_buttons/Products_Buttons";
 import ProductQuantity from "../products_quantity/Products_Quantity";
+import ProductsTerms from "../products_terms/Products_terms";
 
 const StyledProductDelivery = Styled.div`
     display: flex; 
@@ -56,6 +58,8 @@ const ProductDelivery = () => {
                 </div>
             </StyledProductDelivery> 
             <ProductQuantity />
+            <ProductsTerms />
+            <ProductsButtons />            
         </>       
     )
 }

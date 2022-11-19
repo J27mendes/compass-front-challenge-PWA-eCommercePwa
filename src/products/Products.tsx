@@ -3,6 +3,7 @@ import Colors from "../Colors";
 import { icons } from "../components/Images";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import ProductsDescription from "./products_description/Products_Description";
 import ProductsImage from "./products_image/Products_image";
 
 const StyledProducts = Styled.section`
@@ -38,6 +39,7 @@ const Products = () => {
                     <p className="navigation-next-page">Label</p>
             </StyledProducts>
             <ProductsImage />
+            <ProductsDescription />
             <Footer />
         </>
     )
