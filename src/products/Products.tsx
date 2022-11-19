@@ -5,6 +5,7 @@ import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import ProductsDescription from "./products_description/Products_Description";
 import ProductsImage from "./products_image/Products_image";
+import ProductsInfo from "./products_information/Products_Info";
 
 const StyledProducts = Styled.section`
     display: flex;
@@ -40,6 +41,7 @@ const Products = () => {
             </StyledProducts>
             <ProductsImage />
             <ProductsDescription />
+            <ProductsInfo /> 
             <Footer />
         </>
     )

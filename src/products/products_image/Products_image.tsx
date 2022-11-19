@@ -20,7 +20,7 @@ const ProductsImage = () => {
                 <img src={products.Duffle_1} alt="bolsa com alça de couro" />
                 <ProductsDetails />
             </StyledProductsImage> 
-            <ProductsList />   
+            <ProductsList />              
         </>    
     )
 }
