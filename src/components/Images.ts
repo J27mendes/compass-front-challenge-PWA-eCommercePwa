@@ -41,6 +41,8 @@ import Plus from '../assets/category_web/plus.svg';
 import Minus from '../assets/category_web/minus.svg';
 import Error404 from '../assets/error/error.svg';
 import Arrow_left from '../assets/home_web/icons/arrow_left.svg';
+import Star_light from '../assets/home_web/icons/star_light.svg';
+import Star_low from '../assets/home_web/icons/star_low.svg';
 
 export const icons = {
   Logo, 
@@ -65,7 +67,9 @@ export const icons = {
   Grid_grey,
   Plus,
   Minus,
-  Arrow_left 
+  Arrow_left,
+  Star_light,
+  Star_low 
 }
 
 export const marks = {
