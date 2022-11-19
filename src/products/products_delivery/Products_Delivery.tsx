@@ -1,6 +1,6 @@
 import Styled from "styled-components";
 import Colors from "../../Colors";
-import { icons } from "../../components/Images";
+import ProductQuantity from "../products_quantity/Products_Quantity";
 
 const StyledProductDelivery = Styled.div`
     display: flex; 
@@ -44,16 +44,19 @@ const StyledProductDelivery = Styled.div`
 
 const ProductDelivery = () => {
     return (
-        <StyledProductDelivery>
-            <div className="delivery-details">
-                <p>Delivery Details</p>
-                <p className="delivery-date">Check estimated delivery date/pickup option.</p>
-            </div>
-            <div className="delivery-apply">
-                <span className="delivery-apply-pincode">Apply Valid Pincode</span>
-                <span className="delivery-check">CHECK</span>
-            </div>
-        </StyledProductDelivery>        
+        <>
+            <StyledProductDelivery>
+                <div className="delivery-details">
+                    <p>Delivery Details</p>
+                    <p className="delivery-date">Check estimated delivery date/pickup option.</p>
+                </div>
+                <div className="delivery-apply">
+                    <span className="delivery-apply-pincode">Apply Valid Pincode</span>
+                    <span className="delivery-check">CHECK</span>
+                </div>
+            </StyledProductDelivery> 
+            <ProductQuantity />
+        </>       
     )
 }
 
