@@ -44,6 +44,8 @@ import Arrow_left from '../assets/home_web/icons/arrow_left.svg';
 import Star_light from '../assets/home_web/icons/star_light.svg';
 import Star_low from '../assets/home_web/icons/star_low.svg';
 import Bag_white from '../assets/home_web/icons/bag_white.svg';
+import Arrow_full_left from '../assets/home_web/icons/arrow_full_left.svg';
+import Close from '../assets/home_web/icons/close.svg';
 
 export const icons = {
   Logo, 
@@ -71,7 +73,9 @@ export const icons = {
   Arrow_left,
   Star_light,
   Star_low,
-  Bag_white 
+  Bag_white,
+  Close,
+  Arrow_full_left 
 }
 
 export const marks = {
