@@ -38,7 +38,7 @@ const StyledError = Styled.section`
         }
     }
 }  
-`
+`;
 
 const Error = () => {
     return (

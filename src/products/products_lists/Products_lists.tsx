@@ -17,6 +17,7 @@ img{
 }    
 `;
 const ProductsList = () => {
+
     return (        
         <StyledProductsList>
             <img src={icons.Arrow_left} alt="icone de menor q" />
@@ -24,8 +25,8 @@ const ProductsList = () => {
             <img className="product-img" src={products.Duffle_1} alt="bolsa com alça de couro" />
             <img className="product-img" src={products.Duffle_1} alt="bolsa com alça de couro" />
             <img className="product-img" src={products.Duffle_1} alt="bolsa com alça de couro" />
-            <img src={icons.Cut_arrow} alt="icone de maior q" />
-        </StyledProductsList>
+            <img src={icons.Cut_arrow} alt="icone de maior q" />             
+        </StyledProductsList>         
     )
 }
 export default ProductsList
