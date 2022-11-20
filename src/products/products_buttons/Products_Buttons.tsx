@@ -1,10 +1,14 @@
+import ReactModal from "react-modal";
+import { useState } from "react";
 import Styled from "styled-components";
 import Colors from "../../Colors";
 import { icons } from "../../components/Images";
-import ReactModal from "react-modal";
-import { useState } from "react";
 import ModalContainer from "./modal_container/Modal_Container";
 import ModalReturn from "./modal_return/Modal_Return";
+import ModalPriceDetails from "./modal_price_details/Modal_Price_Details";
+import ModalCheck from "./modal_check/Modal_Check";
+import ModalPlaceButton from "./modal_place_button/Modal_Place_Button";
+import ModalContinue from "./modal_continue/Modal_Continue";
 
 ReactModal.setAppElement("#root");
 
@@ -57,7 +61,7 @@ const StyledProductsButtons = Styled.div`
 const StyledModal = Styled.div`
 width: 360px;
     hr {
-        margin-top: 3rem;
+        margin-top: 1rem;
     } 
 `;
 
@@ -74,7 +78,7 @@ const ProductsButtons = () => {
 
   const custom = {
     content: {
-      top: "15%",
+      top: "10%",
       left: "auto",
       right: "1%",
       bottom: "auto",
@@ -102,8 +106,12 @@ const ProductsButtons = () => {
           <ModalContainer />
           <hr />
           <ModalContainer /> 
-          <hr />        
-        </StyledModal>
+          <hr />  
+          <ModalPriceDetails />
+          <ModalCheck /> 
+          <ModalPlaceButton />
+          <ModalContinue />     
+        </StyledModal>        
       </ReactModal>
     </>
   );

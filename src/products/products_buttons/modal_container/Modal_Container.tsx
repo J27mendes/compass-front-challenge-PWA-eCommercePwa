@@ -4,7 +4,7 @@ import { icons, products } from "../../../components/Images";
 
 const StyledModalContainer = Styled.div`
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
         img {
             width: 75px;
             height: 75px;
