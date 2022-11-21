@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import { imgs, icons } from "../../components/Images";
 import Colors from "../../Colors";
+import { Error404 } from "../../routes/Routes";
 
 const StyledBannerMinor = Styled.div`
     padding-left: 2rem;
@@ -38,10 +39,11 @@ const StyledBannerMinor = Styled.div`
             .banner-minor-icone {
                 margin-right: 3rem;
                 margin-top: 1.8rem;
+                cursor: pointer;
             }
         }
     }
-`
+`;
 
 const BannerMinor = () => {
     return (
@@ -51,7 +53,7 @@ const BannerMinor = () => {
                 <div className="banner-minor">
                     <p>Skincare Essentials</p>
                     <div className="banner-minor-icone">
-                        <img src={icons.Circle_arrow_red} alt="icone de seta em volta de circulo"/>
+                        <img onClick={() => Error404()} src={icons.Circle_arrow_red} alt="icone de seta em volta de circulo"/>
                     </div>
                 </div>
             </div> 
@@ -60,7 +62,7 @@ const BannerMinor = () => {
                 <div className="banner-minor">
                     <p className="banner-minor-peels">Facepacks & Peels</p>
                     <div className="banner-minor-icone">
-                        <img src={icons.Circle_arrow_blue} alt="icone de seta em volta de circulo"/>
+                        <img onClick={() => Error404()} src={icons.Circle_arrow_blue} alt="icone de seta em volta de circulo"/>
                     </div>
                 </div>
             </div> 

@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../Colors";
 import { icons } from "../components/Images";
+import { Error404 } from "../routes/Routes";
 import ArrivalsCard from "./arrivals_card/Arrivals_Card";
 
 const StyledNewArrivals = Styled.div`
@@ -24,13 +25,14 @@ const StyledNewArrivals = Styled.div`
                 margin-right: 1rem;
                 color: ${Colors.primary};
                 font-weight: 600;
+                cursor: pointer;
             }
             img {
                 margin-right: 5rem;
             }
         }
     }
-`
+`;
 
 const NewArrivals = () => {
     return (
@@ -39,7 +41,7 @@ const NewArrivals = () => {
             <div className="arrivals">
                 <h2>New Arrivals</h2>
                 <div className="arrivals-view">
-                   <p>View All</p> 
+                   <p onClick={() => Error404()}>View All</p> 
                    <img src={icons.Cut_arrow} alt="icone de maior Q"/>
                 </div>
             </div>            

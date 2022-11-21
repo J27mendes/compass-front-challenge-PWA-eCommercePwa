@@ -1,6 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../Colors";
 import { marks } from "../components/Images";
+import { Error404 } from "../routes/Routes";
 import BannerShop from "./banner_shop/Banner_Shop";
 
 const StyledShop = Styled.section`
@@ -25,6 +26,7 @@ padding-bottom: 4rem;
             margin-top: 2rem;
             margin-left: 2rem;
             margin-right: 0.88rem;
+            cursor: pointer;
         }
     }    
 `; 
@@ -36,22 +38,22 @@ const Shop = () => {
                 <h2>Shop by brands</h2>
                 <div className="cards-shop">
                     <div className="shop">
-                        <img src={marks.Zara} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.Zara} alt="logo da loja zara"/>
                     </div>
                     <div className="shop">
-                        <img src={marks.DeG} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.DeG} alt="logo da loja zara"/>
                     </div>
                     <div className="shop">
-                        <img src={marks.HeM} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.HeM} alt="logo da loja zara"/>
                     </div>
                     <div className="shop">
-                        <img src={marks.Chanel} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.Chanel} alt="logo da loja zara"/>
                     </div>
                     <div className="shop">
-                        <img src={marks.Prada} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.Prada} alt="logo da loja zara"/>
                     </div>
                     <div className="shop">
-                        <img src={marks.Biba} alt="logo da loja zara"/>
+                        <img onClick={() => Error404()} src={marks.Biba} alt="logo da loja zara"/>
                     </div>
                 </div>            
             </StyledShop>

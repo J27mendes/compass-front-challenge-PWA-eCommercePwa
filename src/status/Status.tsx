@@ -21,7 +21,7 @@ const StyledStatus = Styled.div`
 const Status = () => {
     return (
         <StyledStatus>
-            <div className="status">We are currently experiencing local customs clearance delays. For the latest updates, please check your order status <a href="www.google.com.br">here</a></div>
+            <div className="status">We are currently experiencing local customs clearance delays. For the latest updates, please check your order status <a href='./Error'>here</a></div>
         </StyledStatus>
     );
   };
