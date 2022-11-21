@@ -1,8 +1,8 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom"
-import Category from "./category/Category"
-import Error from "./error/Error"
-import Home from "./home/Home"
-import Products from "./products/Products"
+import Category from "./components/category/Category"
+import Error from "./components/error/Error"
+import Home from "./components/home/Home"
+import Products from "./components/products/Products"
 
 const App = () => {
 
