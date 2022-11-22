@@ -1,5 +1,6 @@
 import BannerMinor from "./Banner_Minor";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Home',
@@ -8,5 +9,8 @@ export default {
 }
 
 export const PageBannerMinor: Story = () => ( 
-    <BannerMinor />
+    <>
+        <StyledAll />
+        <BannerMinor />
+    </>
 )  

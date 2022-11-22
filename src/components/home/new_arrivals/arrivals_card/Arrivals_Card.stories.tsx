@@ -1,5 +1,6 @@
 import ArrivalsCard from "./Arrivals_Card";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Home',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageArrivalsCard: Story = () => ( 
-    <ArrivalsCard />
+    <>
+        <StyledAll />
+        <ArrivalsCard />
+    </>
 )  
