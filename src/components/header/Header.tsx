@@ -1,16 +1,19 @@
-import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons } from "../../globalStyles/Images";
 import { Error404 } from "../../routes/Routes";
 
 const StyledMenu = Styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
+  background-color: ${Colors.bright};
   justify-content: space-between; 
   width: 100%
   height: 8vh;
-  padding: 1rem;
-  margin-left: 1rem;  
+  padding: 1rem 4rem 1rem 2rem;
+  z-index: 200;
   .menu-header {
     display: flex; 
     align-items: center;
@@ -31,7 +34,8 @@ const StyledMenu = Styled.header`
   .menu-input {
     display: flex;
     align-items: center;
-    width: 40%;
+    margin-left: 11rem;
+    width: 520px; 
     justify-content: space-around;
   }
   .menu-search {
@@ -69,7 +73,7 @@ const Header = () => {
       <div className="menu-header">
         <img src={icons.Logo} alt="logo Cora'l" />
         <ul className="menu-products">
-          <Link to="/category" className="menu-list">Handbags</Link>
+          <a href="/category" className="menu-list">Handbags</a>
           <li className="menu-list" onClick={() => Error404()}>Watches</li>
           <li className="menu-list" onClick={() => Error404()}>Skincare</li>
           <li className="menu-list" onClick={() => Error404()}>Jewellery</li>

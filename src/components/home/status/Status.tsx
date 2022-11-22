@@ -3,6 +3,7 @@ import Colors from "../../../globalStyles/Colors";
 
 const StyledStatus = Styled.div`
     display flex;
+    margin-top: 5rem;
     justify-content: center;
     align-items: center;
     font-weight: 400;

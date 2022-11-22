@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons } from "../../globalStyles/Images";
@@ -65,8 +64,8 @@ const Footer = () => {
                 <ul>Shop by category
                     <li className="footer-lists-shop" onClick={() => Error404()}>Skincare</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Personal Care</li>
-                    <Link to="/category" className="footer-lists-shop">
-                        <li className="footer-lists-shop">Handbags</li></Link>
+                    <a href="/category" className="footer-lists-shop">
+                        <li className="footer-lists-shop">Handbags</li></a>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Apparels</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Watches</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Eye Wear</li>

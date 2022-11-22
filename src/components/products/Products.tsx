@@ -14,7 +14,7 @@ import { allProducts } from '../../mock';
 const StyledProducts = Styled.section`
     display: flex;
     margin-left: 2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     .navigation-first-page {
         font-weight: 600;

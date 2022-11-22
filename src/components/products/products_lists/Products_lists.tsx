@@ -16,15 +16,15 @@ img{
     border-radius: 8px;
 }    
 `;
-const ProductsList = ({img}:any) => {
+const ProductsList = ({figure}:any) => {
 
     return (        
         <StyledProductsList>
             <img src={icons.Arrow_left} alt="icone de menor q" />
-            <img className="product-img" src={img} alt="bolsa com alça de couro" />
-            <img className="product-img" src={img} alt="bolsa com alça de couro" />
-            <img className="product-img" src={img} alt="bolsa com alça de couro" />
-            <img className="product-img" src={img} alt="bolsa com alça de couro" />
+            <img className="product-img" src={figure} alt="bolsa com alça de couro" />
+            <img className="product-img" src={figure} alt="bolsa com alça de couro" />
+            <img className="product-img" src={figure} alt="bolsa com alça de couro" />
+            <img className="product-img" src={figure} alt="bolsa com alça de couro" />
             <img src={icons.Cut_arrow} alt="icone de maior q" />             
         </StyledProductsList>         
     )

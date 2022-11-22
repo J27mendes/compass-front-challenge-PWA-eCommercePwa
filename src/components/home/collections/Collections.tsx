@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { products } from "../../../globalStyles/Images";
@@ -44,10 +44,10 @@ const Collections = () => {
                     <img src={products.Personal_care} alt="imagem de vidro de perfume"/>
                     <p>Personal Care</p>
                 </div>
-                <Link to="/category" className="product-collections">
+                <a href="/category" className="product-collections">
                     <img src={products.Handbags} alt="imagem de vidro de perfume"/>
                     <p>Handbags</p>
-                </Link>
+                </a>
                 <div onClick={() => Error404()} className="product-collections">
                     <img src={products.Wrist_watches} alt="imagem de vidro de perfume"/>
                     <p>Wrist Watches</p>

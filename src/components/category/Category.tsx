@@ -6,7 +6,7 @@ import InfoProducts from "./info_products/Info_Products";
 import Navigation from "./navigation/Navigation";
 
 const StyledCategory = Styled.section`
-    margin: 1.5rem 2rem;
+    margin: 5rem 2rem;
 `;
 
 const Category = () => {

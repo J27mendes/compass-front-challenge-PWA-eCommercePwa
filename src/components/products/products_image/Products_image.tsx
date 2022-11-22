@@ -28,7 +28,7 @@ const ProductsImage = ({image}:any) => {
                 <img src={image} alt="bolsa com alça de couro" />
                 <ProductsDetails info={cardProduct.arrivalsInfo} name={cardProduct.arrivalsName} price={cardProduct.arrivalsPrice}/>
             </StyledProductsImage> 
-            <ProductsList img={cardProduct.img}/>              
+            <ProductsList figure={cardProduct.img}/>              
         </>    
     )
 }

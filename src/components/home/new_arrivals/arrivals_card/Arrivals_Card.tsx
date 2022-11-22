@@ -1,8 +1,6 @@
 import Styled from "styled-components";
 import { icons, products } from "../../../../globalStyles/Images";
 import Colors from "../../../../globalStyles/Colors";
-import { Link } from "react-router-dom";
-
 
 const StyledArrivalsCard = Styled.section`
     display: flex;
@@ -28,7 +26,7 @@ const StyledArrivalsCard = Styled.section`
     }
     .arrivals-name {
         font-size: 0.9rem;
-        color: ${Colors.low_emphasis}
+        color: ${Colors.low_emphasis};
     }
     .arrivals-price {
         margin-top: 0.8rem;
@@ -41,8 +39,8 @@ const StyledArrivalsCard = Styled.section`
 
 const ArrivalsCard = () => {
     return (
-        <StyledArrivalsCard>
-            <Link to="/products/1" className="card-arrivals">
+        <StyledArrivalsCard>                       
+            <a href="/products/1" className="card-arrivals">
                 <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa"/>
                 <div className="arrivals-like">
                     <p className="arrivals-info">Grande</p>
@@ -50,8 +48,8 @@ const ArrivalsCard = () => {
                 </div>
                 <p className="arrivals-name">Blossom Pouch</p>
                 <p className="arrivals-price">$39.49</p>
-            </Link>
-            <Link to="/products/2" className="card-arrivals">
+            </a>
+            <a href="/products/2" className="card-arrivals">
                 <img src={products.Duffle_1} alt="imagem de bolsa cor de rosa"/>
                 <div className="arrivals-like">
                     <p className="arrivals-info">Coach</p>
@@ -59,8 +57,8 @@ const ArrivalsCard = () => {
                 </div>
                 <p className="arrivals-name">Leather Coach Bag</p>
                 <p className="arrivals-price">$54.69</p>
-            </Link>
-            <Link to="/products/3" className="card-arrivals">
+            </a>
+            <a href="/products/3" className="card-arrivals">
                 <img src={products.Irene_unsplash_2} alt="imagem de bolsa cor de rosa"/>
                 <div className="arrivals-like">
                     <p className="arrivals-info">Remus</p>
@@ -68,8 +66,8 @@ const ArrivalsCard = () => {
                 </div>
                 <p className="arrivals-name">Brown Strap Bag</p>
                 <p className="arrivals-price">$57.00</p>
-            </Link>
-            <Link to="/products/4" className="card-arrivals">
+            </a>
+            <a href="/products/4" className="card-arrivals">
                 <img src={products.Black_bag_1} alt="imagem de bolsa cor de rosa"/>
                 <div className="arrivals-like">
                     <p className="arrivals-info">Boujee</p>
@@ -77,10 +75,8 @@ const ArrivalsCard = () => {
                 </div>
                 <p className="arrivals-name">Black Bag</p>
                 <p className="arrivals-price">$56.49</p>
-            </Link>
-        </StyledArrivalsCard>
-        
-    
+            </a>          
+        </StyledArrivalsCard>      
     )
 }
 export default ArrivalsCard

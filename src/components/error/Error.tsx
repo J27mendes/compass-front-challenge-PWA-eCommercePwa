@@ -51,8 +51,7 @@ const Error = () => {
                     <h2 className="error-subtitle">File not found</h2>
                 </div>
                 <p className="error-description">The file you are looking for may be damaged, deleted, moved, or a bug may have caused the error.</p>
-            </section>
-                    
+            </section>                    
         </StyledError>           
     )
 }

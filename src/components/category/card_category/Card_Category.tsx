@@ -2,7 +2,6 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons, products } from "../../../globalStyles/Images";
 import Marking from "./pages_marking/Pages_Marking";
-import { Link } from "react-router-dom";
 
 const StyledCardCategory = Styled.div`
     display: flex;
@@ -66,7 +65,7 @@ const CardCategory = () => {
     return (
         <>
             <StyledCardCategory>
-                <Link to="/products/1" className="category-products">
+                <a href="/products/1" className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -86,8 +85,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/3" className="category-products">
+                </a>
+                <a href="/products/3" className="category-products">
                     <img src={products.Irene_unsplash_2} alt="imagem de bolsa de couro com corrente prateada" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Remus</p>
@@ -107,8 +106,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/2" className="category-products">
+                </a>
+                <a href="/products/2" className="category-products">
                     <img src={products.Duffle_1} alt="imagem de bolsa e alça de couro" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Coach</p>
@@ -128,10 +127,10 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
+                </a>
             </StyledCardCategory> 
             <StyledCardCategory>
-                <Link to="/products/4" className="category-products">
+                <a href="/products/4" className="category-products">
                     <img src={products.Black_bag_1} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Boujee</p>
@@ -150,8 +149,8 @@ const CardCategory = () => {
                         <p className="price-real">$56.49</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/1"  className="category-products">
+                </a>
+                <a href="/products/1"  className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -171,8 +170,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/1" className="category-products">
+                </a>
+                <a href="/products/1" className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -192,10 +191,10 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
+                </a>
             </StyledCardCategory>
             <StyledCardCategory>
-                <Link to="/products/1" className="category-products">
+                <a href="/products/1" className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -215,8 +214,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/1" className="category-products">
+                </a>
+                <a href="/products/1" className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -236,8 +235,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
-                <Link to="/products/1" className="category-products">
+                </a>
+                <a href="/products/1" className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -257,7 +256,7 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </Link>
+                </a>
             </StyledCardCategory> 
             <Marking />  
         </>     
