@@ -1,5 +1,6 @@
 import ProductsButtons from "./Products_Buttons";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../globalStyles/Reset";
 
 export default {
     title: 'component/Products',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageProductsButtons: Story = () => ( 
-    <ProductsButtons />
+    <>
+        <StyledAll />
+        <ProductsButtons />
+    </>
 )  
