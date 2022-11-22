@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { products } from "../../../globalStyles/Images";
-import { CategoryRoute, Error404 } from "../../../routes/Routes";
+import { Error404 } from "../../../routes/Routes";
 
 const StyledCollections = Styled.section`
     background-color: ${Colors.primary};
@@ -17,6 +18,8 @@ const StyledCollections = Styled.section`
         .product-collections {
             margin-left: 2rem;
             margin-right: 0.5rem;
+            text-decoration: none;
+            color: ${Colors.dark};
             cursor: pointer;
             img {
                 border-radius: 16px;
@@ -41,10 +44,10 @@ const Collections = () => {
                     <img src={products.Personal_care} alt="imagem de vidro de perfume"/>
                     <p>Personal Care</p>
                 </div>
-                <div onClick={() => CategoryRoute()} className="product-collections">
+                <Link to="/category" className="product-collections">
                     <img src={products.Handbags} alt="imagem de vidro de perfume"/>
                     <p>Handbags</p>
-                </div>
+                </Link>
                 <div onClick={() => Error404()} className="product-collections">
                     <img src={products.Wrist_watches} alt="imagem de vidro de perfume"/>
                     <p>Wrist Watches</p>

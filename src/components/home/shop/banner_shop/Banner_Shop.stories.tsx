@@ -1,5 +1,6 @@
 import BannerShop from "./Banner_Shop";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Home',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageBannerShop: Story = () => ( 
-    <BannerShop />
+    <>
+        <StyledAll />
+        <BannerShop />
+    </>
 )  

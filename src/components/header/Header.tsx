@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons } from "../../globalStyles/Images";
-import { CategoryRoute, Error404 } from "../../routes/Routes";
+import { Error404 } from "../../routes/Routes";
 
 const StyledMenu = Styled.header`
   display: flex;
@@ -19,10 +20,12 @@ const StyledMenu = Styled.header`
     margin-left: 1rem;
     color: ${Colors.dark}
   }
-  li {
+  .menu-list {
+    text-decoration: none;
     margin-left: 1rem;
     font-weight: 500;
     cursor: pointer;
+    color: ${Colors.dark};
 
   }
   .menu-input {
@@ -66,11 +69,11 @@ const Header = () => {
       <div className="menu-header">
         <img src={icons.Logo} alt="logo Cora'l" />
         <ul className="menu-products">
-          <li onClick={() => CategoryRoute()}>Handbags</li>
-          <li onClick={() => Error404()}>Watches</li>
-          <li onClick={() => Error404()}>Skincare</li>
-          <li onClick={() => Error404()}>Jewellery</li>
-          <li onClick={() => Error404()}>Apperels</li>
+          <Link to="/category" className="menu-list">Handbags</Link>
+          <li className="menu-list" onClick={() => Error404()}>Watches</li>
+          <li className="menu-list" onClick={() => Error404()}>Skincare</li>
+          <li className="menu-list" onClick={() => Error404()}>Jewellery</li>
+          <li className="menu-list" onClick={() => Error404()}>Apperels</li>
         </ul>
       </div>
       <div className="menu-input">

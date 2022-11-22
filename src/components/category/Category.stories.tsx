@@ -1,4 +1,5 @@
 import Category from "./Category";
+import { StyledAll } from "../../globalStyles/Reset";
 import { Story } from '@storybook/react';
 
 export default {
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageCategory: Story = () => ( 
-    <Category />
+    <>
+        <StyledAll />
+        <Category />
+    </>
 )  

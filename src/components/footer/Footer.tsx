@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons } from "../../globalStyles/Images";
-import { CategoryRoute, Error404 } from "../../routes/Routes";
+import { Error404 } from "../../routes/Routes";
 
 const StyledFooter = Styled.section`
     display: flex;
@@ -14,11 +15,11 @@ const StyledFooter = Styled.section`
         ul {
             margin-left: 4rem;
             color: ${Colors.grey};
-            li {
+            .footer-lists-shop {
                 color: ${Colors.light_text};
                 margin-top: 1rem;
                 cursor: pointer;
-
+                text-decoration: none;                
             }
         }
     }
@@ -62,27 +63,28 @@ const Footer = () => {
         <StyledFooter>
             <div className="footer-lists">
                 <ul>Shop by category
-                    <li onClick={() => Error404()}>Skincare</li>
-                    <li onClick={() => Error404()}>Personal Care</li>
-                    <li onClick={() => CategoryRoute()}>Handbags</li>
-                    <li onClick={() => Error404()}>Apparels</li>
-                    <li onClick={() => Error404()}>Watches</li>
-                    <li onClick={() => Error404()}>Eye Wear</li>
-                    <li onClick={() => Error404()}>Jewellery</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Skincare</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Personal Care</li>
+                    <Link to="/category" className="footer-lists-shop">
+                        <li className="footer-lists-shop">Handbags</li></Link>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Apparels</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Watches</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Eye Wear</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Jewellery</li>
                 </ul>
                 <ul>About
-                    <li onClick={() => Error404()}>Contact Us</li>
-                    <li onClick={() => Error404()}>About Us</li>
-                    <li onClick={() => Error404()}>Careers</li>
-                    <li onClick={() => Error404()}>Press</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Contact Us</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>About Us</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Careers</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Press</li>
                 </ul>
                 <ul>Policy
-                    <li onClick={() => Error404()}>Return Policy</li>
-                    <li onClick={() => Error404()}>Terms of Use</li>
-                    <li onClick={() => Error404()}>Sitemap</li>
-                    <li onClick={() => Error404()}>Security</li>
-                    <li onClick={() => Error404()}>Privacy</li>
-                    <li onClick={() => Error404()}>EPR Compliance</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Return Policy</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Terms of Use</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Sitemap</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Security</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Privacy</li>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>EPR Compliance</li>
                 </ul>                
             </div>
             <div className="footer-location">

@@ -1,7 +1,9 @@
+import { useEffect, useState } from 'react';
 import Styled from "styled-components";
-import { products } from "../../../globalStyles/Images";
 import ProductsDetails from "../products_details/Products_details";
 import ProductsList from "../products_lists/Products_lists";
+import { useParams } from 'react-router-dom';
+import { allProducts } from '../../../mock';
 
 const StyledProductsImage = Styled.section`
 display: flex;
@@ -13,14 +15,20 @@ display: flex;
     }
 `;
 
-const ProductsImage = () => {
+const ProductsImage = ({image}:any) => {
+    const { id } = useParams();
+    const [cardProduct, setProduct] = useState<any>({})
+    useEffect(() => {
+        const [newProducts] = allProducts.filter((product) => product.id === Number(id))
+        setProduct(newProducts)
+    },[id])  
     return (
         <>
             <StyledProductsImage>
-                <img src={products.Duffle_1} alt="bolsa com alça de couro" />
-                <ProductsDetails />
+                <img src={image} alt="bolsa com alça de couro" />
+                <ProductsDetails info={cardProduct.arrivalsInfo} name={cardProduct.arrivalsName} price={cardProduct.arrivalsPrice}/>
             </StyledProductsImage> 
-            <ProductsList />              
+            <ProductsList img={cardProduct.img}/>              
         </>    
     )
 }

@@ -1,5 +1,6 @@
 import Shop from "./Shop";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../globalStyles/Reset";
 
 export default {
     title: 'component/Home',
@@ -8,5 +9,8 @@ export default {
 }
 
 export const PageShop: Story = () => ( 
-    <Shop />
+    <>
+        <StyledAll />
+        <Shop />
+    </>
 )  
