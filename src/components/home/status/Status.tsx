@@ -17,6 +17,9 @@ const StyledStatus = Styled.div`
         font-weight: 500;
         }
     }
+    @media (max-width: 800px){
+        display: none;
+    }
    
 `;
 const Status = () => {

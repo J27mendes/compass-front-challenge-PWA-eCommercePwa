@@ -8,6 +8,7 @@ const StyledBanner = Styled.div`
     align-items: center;
     margin: 2rem;
     img {
+        width: 100%;
         z-index: -1;
         margin-right: -53%;
         border-radius: 25px;
@@ -35,6 +36,32 @@ const StyledBanner = Styled.div`
             margin: 1.6rem 0 1.6rem 0;
             line-height: 3rem;
         }        
+    }
+    @media (max-width: 800px) {
+        margin-top: 4rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+        img {
+            border-radius: 5px;
+        }
+        .banner-info {
+            width: 200px;
+            height: 10vh;
+            border-radius: 8px 0 0 8px;
+            padding-left: 0.5rem;
+            height: 12vh;
+            h2 {
+                margin-top: 0.5rem;
+                width: 120px;
+                font-size: 1.2rem;
+            }
+            p {
+                margin: 0.5rem 0 1rem 0;
+                width: 150px;
+                font-size: 0.7rem;
+                line-height: 0.8rem;
+            }
+        }
     }
     
 `;

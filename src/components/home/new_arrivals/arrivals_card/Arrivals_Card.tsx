@@ -4,7 +4,7 @@ import Colors from "../../../../globalStyles/Colors";
 
 const StyledArrivalsCard = Styled.section`
     display: flex;
-    margin-top: 2rem ;
+    margin-top: 2rem;
     margin-left: 2rem; 
     margin-bottom: 2.2rem;
     .card-arrivals {
@@ -34,7 +34,33 @@ const StyledArrivalsCard = Styled.section`
         font-weight: 600;
         color: ${Colors.dark};
     }
-}    
+} 
+
+@media(max-width: 800px){
+    margin-top: 1rem;
+    margin-left: 1rem; 
+    .card-arrivals {
+        margin-right: 1rem;
+        img {
+            width: 160px;
+            height: 160px;
+        }
+        .arrivals-like {
+            width: 160px;
+            .arrivals-info {
+                font-size: 0.9rem;
+            }
+            img {
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
+        .arrivals-name {
+            font-size: 0.8rem;
+            margin: -0.4rem 0;
+        }
+    }
+}
 `;
 
 const ArrivalsCard = () => {

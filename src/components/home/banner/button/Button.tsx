@@ -22,7 +22,10 @@ const StyledButtonBanner = Styled.div`
             margin-left: 1rem;
             padding: 0.2rem;
         }         
-    }     
+    }  
+    @media (max-width: 800px) {
+        display: none;
+    }  
 `;
 
 const ButtonBanner = () => {

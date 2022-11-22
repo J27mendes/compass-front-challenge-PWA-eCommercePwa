@@ -32,6 +32,28 @@ const StyledNewArrivals = Styled.div`
             }
         }
     }
+    @media(max-width: 800px){
+        margin-top: 2rem;
+        .arrivals {
+            display: flex;
+            align-items: center;
+            h2 {
+            font-size: 1rem;
+            margin-left: 1rem;
+            }
+            .arrivals-view {
+                p {
+                    font-size: 0.8rem;
+                    margin-right: 0.5rem;
+                }
+                img {
+                    width: 0.4rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+       
+    }
 `;
 
 const NewArrivals = () => {

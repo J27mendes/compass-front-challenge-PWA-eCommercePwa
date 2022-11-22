@@ -46,6 +46,10 @@ import Star_low from '../assets/home_web/icons/star_low.svg';
 import Bag_white from '../assets/home_web/icons/bag_white.svg';
 import Arrow_full_left from '../assets/home_web/icons/arrow_full_left.svg';
 import Close from '../assets/home_web/icons/close.svg';
+import Add_to from '../assets/icons_mobile/add_to.svg';
+import Menu from '../assets/icons_mobile/menu.svg';
+import Notification from '../assets/icons_mobile/notification.svg';
+import Search_mobile from '../assets/icons_mobile/search_mobile.svg';
 
 export const icons = {
   Logo, 
@@ -76,6 +80,13 @@ export const icons = {
   Bag_white,
   Close,
   Arrow_full_left 
+}
+
+export const iconsMobile = {
+    Add_to,
+    Menu,
+    Notification,
+    Search_mobile
 }
 
 export const marks = {
