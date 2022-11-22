@@ -1,5 +1,6 @@
 import InfoCheck from "./Info_Check";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../globalStyles/Reset";
 
 export default {
     title: 'component/Category',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageInfoCheck: Story = () => ( 
-    <InfoCheck />
+    <>
+        <StyledAll />
+        <InfoCheck />
+    </>
 )  

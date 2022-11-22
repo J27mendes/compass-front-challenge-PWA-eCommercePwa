@@ -1,5 +1,6 @@
 import InfoProducts from "./Info_Products";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../globalStyles/Reset";
 
 export default {
     title: 'component/Category',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageInfoProducts: Story = () => ( 
-    <InfoProducts />
+    <>
+        <StyledAll />
+        <InfoProducts />
+    </>
 )  
