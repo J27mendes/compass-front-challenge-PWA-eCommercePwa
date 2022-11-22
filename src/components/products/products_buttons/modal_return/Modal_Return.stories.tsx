@@ -1,5 +1,6 @@
 import ModalReturn from "./Modal_Return";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Modal',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageModalReturn: Story = () => ( 
-    <ModalReturn />
+    <>
+        <StyledAll />
+        <ModalReturn />
+    </>
 )  

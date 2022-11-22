@@ -1,5 +1,6 @@
 import ModalCheck from "./Modal_Check";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Modal',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageModalCheck: Story = () => ( 
-    <ModalCheck />
+    <>
+        <StyledAll />
+        <ModalCheck />
+    </>
 )  

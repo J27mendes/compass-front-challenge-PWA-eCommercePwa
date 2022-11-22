@@ -1,5 +1,6 @@
 import ModalContinue from "./Modal_Continue";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Modal',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageModalContinue: Story = () => ( 
-    <ModalContinue />
+    <>
+        <StyledAll />
+        <ModalContinue />
+    </>
 )  

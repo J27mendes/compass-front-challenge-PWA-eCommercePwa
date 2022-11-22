@@ -1,5 +1,6 @@
 import ModalContainer from "./Modal_Container";
 import { Story } from '@storybook/react';
+import { StyledAll } from "../../../../globalStyles/Reset";
 
 export default {
     title: 'component/Modal',
@@ -7,5 +8,8 @@ export default {
 }
 
 export const PageModalContainer: Story = () => ( 
-    <ModalContainer />
+    <>
+        <StyledAll />
+        <ModalContainer />
+    </>
 )  
