@@ -50,7 +50,7 @@ const StyledBannerMinor = Styled.div`
             margin-right: 1.5rem;
             img {
                 border-radius: 8px;
-                width: 48vw;
+                width: 45vw;
                 height: 14vh; 
                 margin-right: -7rem;              
             }

@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons, marks } from "../../../globalStyles/Images";
 import { Error404 } from "../../../routes/Routes";
+import Pwa from "../pwa_mobile/PwaMobile";
 import BannerShop from "./banner_shop/Banner_Shop";
 
 const StyledShop = Styled.section`
@@ -116,6 +117,7 @@ const Shop = () => {
                     </div>
                 </div>            
             </StyledShop>
+            <Pwa/>
             <BannerShop />
         </>
     )

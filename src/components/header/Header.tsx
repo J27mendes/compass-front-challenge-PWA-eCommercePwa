@@ -91,8 +91,8 @@ const StyledMenu = Styled.header`
       }
       .header-icons-mobile {
         margin-left: 2rem;
-        margin-right: 2rem;
-        width: 180px;
+        margin-right: 1rem;
+        width: 120px;
         display: flex;
         justify-content: space-between;
       }

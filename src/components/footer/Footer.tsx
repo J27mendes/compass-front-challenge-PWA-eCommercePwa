@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons } from "../../globalStyles/Images";
-import { Error404 } from "../../routes/Routes";
+import { Error404, PageCategory } from "../../routes/Routes";
 
 const StyledFooter = Styled.section`
     display: flex;
@@ -21,6 +21,12 @@ const StyledFooter = Styled.section`
                 text-decoration: none;                
             }
         }
+        .footer-container {
+            display: flex;
+        }
+    }
+    .division-footer {
+        display: none;
     }
     .footer-location {
         margin-top: 2rem;
@@ -55,37 +61,111 @@ const StyledFooter = Styled.section`
         }
         
     }
+    @media(max-width: 800px){
+        flex-direction: column;
+        padding-bottom: 2rem;
+        .footer-lists {
+            margin-top: 1rem;
+            flex-direction: column;
+            ul {
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+                .footer-lists-shop {
+                    margin-top: 0.5rem;
+                }               
+            }
+            .footer-container {
+                display: flex;
+                flex-direction: column-reverse;
+                .footer-policy{
+                    margin: 2rem 1rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .footer-lists-shop { 
+                        justify-content: center;
+                        align-items: space-evenly;
+                        margin-right: 0.5rem;
+                        margin-top: 1.5rem;
+                        line-height: 0.4rem;
+                        :first-child {
+                            margin-left: -2.5rem;
+                        }                
+                    }
+                }
+                .footer-about {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .footer-lists-shop { 
+                        justify-content: center;
+                        align-items: space-evenly;
+                        margin-right: 0.5rem;
+                        margin-top: 1.5rem;
+                        line-height: 0.4rem;
+                        :first-child {
+                            margin-left: -2.5rem;
+                        }                
+                    }
+                }
+            }
+        }
+        .division-footer {
+            display: flex;
+            width: 100vw;
+        }
+        .footer-location {
+            margin-top: 1rem;
+            .footer-location-links {
+                justify-content: flex-start;
+            }
+            .footer-address {
+                margin-left: 1rem;
+                display: flex;
+                justify-content: flex-start;
+                p {
+                    margin-left: 0.3rem;
+                }
+            }
+            p {
+                margin-left: 1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
 `;
 
 const Footer = () => {
     return (
         <StyledFooter>
             <div className="footer-lists">
-                <ul>Shop by category
+                <ul className="footer-category">Shop by category
                     <li className="footer-lists-shop" onClick={() => Error404()}>Skincare</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Personal Care</li>
-                    <a href="/category" className="footer-lists-shop">
-                        <li className="footer-lists-shop">Handbags</li></a>
+                    <li className="footer-lists-shop" onClick={() => Error404()}>Personal Care</li>                    
+                    <li className="footer-lists-shop" onClick={() => PageCategory()}>Handbags</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Apparels</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Watches</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Eye Wear</li>
                     <li className="footer-lists-shop" onClick={() => Error404()}>Jewellery</li>
                 </ul>
-                <ul>About
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Contact Us</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>About Us</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Careers</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Press</li>
-                </ul>
-                <ul>Policy
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Return Policy</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Terms of Use</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Sitemap</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Security</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>Privacy</li>
-                    <li className="footer-lists-shop" onClick={() => Error404()}>EPR Compliance</li>
-                </ul>                
+                <div className="footer-container">
+                    <ul className="footer-about">About
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Contact Us</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>About Us</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Careers</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Press</li>
+                    </ul>
+                    <ul className="footer-policy">Policy
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Return Policy</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Terms of Use</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Sitemap</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Security</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>Privacy</li>
+                        <li className="footer-lists-shop" onClick={() => Error404()}>EPR Compliance</li>
+                    </ul> 
+                </div>               
             </div>
+            <hr className="division-footer"/>
             <div className="footer-location">
                 <div className="footer-location-links">
                     <img onClick={() => Error404()} src={icons.Facebook} alt="logo do facebook"/>

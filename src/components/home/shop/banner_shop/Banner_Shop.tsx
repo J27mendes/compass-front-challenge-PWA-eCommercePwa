@@ -37,12 +37,12 @@ const StyledBannerShop = Styled.div`
         .shop-lifestyle{
             margin-right: -14rem;
             h2 {
-                margin-left: 2.8rem;
+                margin-left: 1rem;
                 margin-top: 1rem;
                 font-size: 0.8rem;
             }
             p {
-                margin-left: 2.8rem;
+                margin-left: 1rem;
                 font-size: 1rem;
                 width: 200px;
                 line-height: 1.2rem;
@@ -52,13 +52,13 @@ const StyledBannerShop = Styled.div`
                 display: flex;
                 width: 2rem;
                 height: 2rem;
-                margin-left: 2.8rem;
+                margin-left: 1rem;
             } 
         }
         img {
             border-radius: 10px;
             margin: 1rem 1rem 0 1rem;
-            width: 100vw;
+            width: 93vw;
             height: 18vh;
         }
     }

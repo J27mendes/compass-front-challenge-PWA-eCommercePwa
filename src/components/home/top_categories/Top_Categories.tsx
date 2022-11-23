@@ -11,7 +11,8 @@ const StyledTopCategories = Styled.section `
     }
     .top-categories-mobile {
         display: flex;
-        margin-top: 1rem;       
+        margin-top: 1rem;  
+        overflow-x: auto;     
         .top-categories-container {
             margin-right: 1rem;          
             img {
