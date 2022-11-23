@@ -53,13 +53,13 @@ const StyledCollections = Styled.section`
                 cursor: pointer;
                 img {
                     border-radius: 10px;
-                    width: 176px;
-                    height: 176px;
-                    margin-bottom: -2rem;
+                    width: 160px;
+                    height: 160px;
+                    margin-bottom: -1.7rem;
                 }
                 p {
                     margin-left: 1rem;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     font-weight: 600;
                 } 
                 .p-collections {
