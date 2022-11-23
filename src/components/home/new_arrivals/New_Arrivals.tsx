@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons } from "../../../globalStyles/Images";
 import { Error404 } from "../../../routes/Routes";
+import TopCategories from "../top_categories/Top_Categories";
 import ArrivalsCard from "./arrivals_card/Arrivals_Card";
 
 const StyledNewArrivals = Styled.div`
@@ -59,6 +60,7 @@ const StyledNewArrivals = Styled.div`
 const NewArrivals = () => {
     return (
         <>
+        <TopCategories />
         <StyledNewArrivals>
             <div className="arrivals">
                 <h2>New Arrivals</h2>

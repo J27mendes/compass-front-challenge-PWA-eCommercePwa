@@ -50,6 +50,10 @@ import Add_to from '../assets/icons_mobile/add_to.svg';
 import Menu from '../assets/icons_mobile/menu.svg';
 import Notification from '../assets/icons_mobile/notification.svg';
 import Search_mobile from '../assets/icons_mobile/search_mobile.svg';
+import Skincare_mobile from '../assets/images_mobile/skincare_mobile.svg';
+import Handbags_mobile from '../assets/images_mobile/handbags_mobile.svg';
+import Watches_mobile from '../assets/images_mobile/watches_mobile.svg';
+import Jellewery_mobile from '../assets/images_mobile/jewelery_mobile.svg';
 
 export const icons = {
   Logo, 
@@ -87,6 +91,13 @@ export const iconsMobile = {
     Menu,
     Notification,
     Search_mobile
+}
+
+export const image_mobile = {
+    Handbags_mobile,
+    Jellewery_mobile,
+    Skincare_mobile,
+    Watches_mobile
 }
 
 export const marks = {
