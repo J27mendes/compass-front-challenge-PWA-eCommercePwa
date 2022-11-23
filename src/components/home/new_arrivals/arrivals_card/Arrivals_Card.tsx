@@ -39,6 +39,8 @@ const StyledArrivalsCard = Styled.section`
 @media(max-width: 800px){
     margin-top: 1rem;
     margin-left: 1rem; 
+    overflow-x: auto;
+    }
     .card-arrivals {
         margin-right: 1rem;
         img {
