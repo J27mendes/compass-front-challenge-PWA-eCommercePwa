@@ -18,7 +18,7 @@ padding-bottom: 4rem;
     }
     .cards-shop {
         display: flex;
-        .teste {
+        .card-shop-container {
             display: flex;
             .shop {
                 display: flex;
@@ -36,7 +36,7 @@ padding-bottom: 4rem;
         }
     } 
     @media(max-width: 800px){
-        padding-bottom: 1.5rem;
+        padding-bottom: 0rem;
         .shop-mobile{
             display: flex;
             justify-content: space-between;
@@ -60,7 +60,7 @@ padding-bottom: 4rem;
             }
         }
         .cards-shop {
-            .teste { 
+            .card-shop-container { 
                 flex-direction: column;           
                 .shop {
                     width: 110px;
@@ -90,7 +90,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="cards-shop">
-                    <div className="teste">
+                    <div className="card-shop-container">
                         <div className="shop">
                             <img onClick={() => Error404()} src={marks.Zara} alt="logo da loja zara"/>
                         </div>
@@ -98,7 +98,7 @@ const Shop = () => {
                             <img onClick={() => Error404()} src={marks.DeG} alt="logo da loja zara"/>
                         </div>
                     </div> 
-                    <div className="teste"> 
+                    <div className="card-shop-container"> 
                         <div className="shop">
                             <img onClick={() => Error404()} src={marks.HeM} alt="logo da loja zara"/>
                         </div>                                 
@@ -106,7 +106,7 @@ const Shop = () => {
                             <img onClick={() => Error404()} src={marks.Chanel} alt="logo da loja zara"/>
                         </div> 
                     </div>
-                    <div className="teste">                  
+                    <div className="card-shop-container">                  
                         <div className="shop">
                             <img onClick={() => Error404()} src={marks.Prada} alt="logo da loja zara"/>
                         </div>

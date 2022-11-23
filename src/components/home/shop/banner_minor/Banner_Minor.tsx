@@ -43,6 +43,38 @@ const StyledBannerMinor = Styled.div`
             }
         }
     }
+    @media(max-width: 800px){
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        .banner-minor-container {
+            margin-right: 1.5rem;
+            img {
+                border-radius: 8px;
+                width: 48vw;
+                height: 14vh; 
+                margin-right: -7rem;              
+            }
+            .banner-minor {
+                p {
+                    width: 100px;
+                    line-height: 1rem;
+                    font-size: 0.9rem;
+                } 
+                .banner-minor-peels {
+                    width: 100px;
+                    line-height: 1rem;
+                    font-size: 0.9rem;
+                }       
+                .banner-minor-icone {
+                    img {
+                        margin-left: 1.5rem;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 `;
 
 const BannerMinor = () => {

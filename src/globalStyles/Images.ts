@@ -54,6 +54,7 @@ import Skincare_mobile from '../assets/images_mobile/skincare_mobile.svg';
 import Handbags_mobile from '../assets/images_mobile/handbags_mobile.svg';
 import Watches_mobile from '../assets/images_mobile/watches_mobile.svg';
 import Jellewery_mobile from '../assets/images_mobile/jewelery_mobile.svg';
+import Arrow_right_brown from '../assets/images_mobile/arrow_right_brown.svg';
 
 export const icons = {
   Logo, 
@@ -97,7 +98,8 @@ export const image_mobile = {
     Handbags_mobile,
     Jellewery_mobile,
     Skincare_mobile,
-    Watches_mobile
+    Watches_mobile,
+    Arrow_right_brown
 }
 
 export const marks = {
