@@ -5,7 +5,6 @@ import { StyledAll } from "../../../../globalStyles/Reset";
 export default {
     title: 'component/Home',
     component: BannerMinor
-
 }
 
 export const PageBannerMinor: Story = () => ( 
