@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import { image_mobile, imgs } from "../../../../globalStyles/Images";
 import Colors from "../../../../globalStyles/Colors";
 import BannerMinor from "../banner_minor/Banner_Minor";
+import MakeSkincare from "../../makeup_mobile/Make";
 
 const StyledBannerShop = Styled.div`
     display: flex;
@@ -35,16 +36,17 @@ const StyledBannerShop = Styled.div`
         padding-bottom: 1rem;
         padding-left: 1rem;
         .shop-lifestyle{
-            margin-right: -14rem;
+            margin-right: -13rem;
             h2 {
                 margin-left: 1rem;
-                margin-top: 1rem;
-                font-size: 0.8rem;
+                margin-top: 1.5rem;
+                font-size: 0.7rem;
             }
             p {
                 margin-left: 1rem;
                 font-size: 1rem;
-                width: 200px;
+                width: 180px;
+                font-weight: 800;
                 line-height: 1.2rem;
                 margin-top: 0.5rem;
             }
@@ -56,10 +58,10 @@ const StyledBannerShop = Styled.div`
             } 
         }
         img {
-            border-radius: 10px;
+            border-radius: 8px;
             margin: 1rem 1rem 0 1rem;
             width: 93vw;
-            height: 18vh;
+            height: 24vh;
         }
     }
 `;
@@ -67,6 +69,7 @@ const StyledBannerShop = Styled.div`
 const BannerShop = () => {
     return (
         <>
+            <MakeSkincare />
             <StyledBannerShop>
                 <div className="shop-lifestyle">
                     <h2>LIFESTYLE</h2>

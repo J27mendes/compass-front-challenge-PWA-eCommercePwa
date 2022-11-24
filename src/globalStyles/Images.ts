@@ -58,6 +58,8 @@ import Arrow_right_brown from '../assets/images_mobile/arrow_right_brown.svg';
 import Wide_mobile from '../assets/images_mobile/wide_mobile.png';
 import Funk_mobile from '../assets/images_mobile/funk_mobile.png';
 import Pwa from '../assets/images_mobile/pwa.png';
+import Arrow_up from '../assets/images_mobile/arrow_up.svg';
+import Arrow_down from '../assets/images_mobile/arrow_down.svg';
 
 export const icons = {
   Logo, 
@@ -94,7 +96,9 @@ export const iconsMobile = {
     Add_to,
     Menu,
     Notification,
-    Search_mobile
+    Search_mobile,
+    Arrow_down,
+    Arrow_up
 }
 
 export const image_mobile = {

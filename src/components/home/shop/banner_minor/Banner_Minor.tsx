@@ -2,6 +2,9 @@ import Styled from "styled-components";
 import { imgs, icons } from "../../../../globalStyles/Images";
 import Colors from "../../../../globalStyles/Colors";
 import { Error404 } from "../../../../routes/Routes";
+import Trending from "../../trending/Trending";
+import ImageTrending from "../../images_trending/Image_trending";
+
 
 const StyledBannerMinor = Styled.div`
     padding-left: 2rem;
@@ -51,7 +54,7 @@ const StyledBannerMinor = Styled.div`
             img {
                 border-radius: 8px;
                 width: 45vw;
-                height: 14vh; 
+                height: 18vh; 
                 margin-right: -7rem;              
             }
             .banner-minor {
@@ -79,26 +82,30 @@ const StyledBannerMinor = Styled.div`
 
 const BannerMinor = () => {
     return (
-        <StyledBannerMinor>
-            <div className="banner-minor-container">
-                <img src={imgs.Creme} alt="imagem de mãos segurando pote de creme"/>
-                <div className="banner-minor">
-                    <p>Skincare Essentials</p>
-                    <div className="banner-minor-icone">
-                        <img onClick={() => Error404()} src={icons.Circle_arrow_red} alt="icone de seta em volta de circulo"/>
+        <>
+            <StyledBannerMinor>
+                <div className="banner-minor-container">
+                    <img src={imgs.Creme} alt="imagem de mãos segurando pote de creme"/>
+                    <div className="banner-minor">
+                        <p>Skincare Essentials</p>
+                        <div className="banner-minor-icone">
+                            <img onClick={() => Error404()} src={icons.Circle_arrow_red} alt="icone de seta em volta de circulo"/>
+                        </div>
                     </div>
-                </div>
-            </div> 
-            <div className="banner-minor-container">
-                <img src={imgs.Image_skincare} alt="imagem de mulher cuidando da pele"/>
-                <div className="banner-minor">
-                    <p className="banner-minor-peels">Facepacks & Peels</p>
-                    <div className="banner-minor-icone">
-                        <img onClick={() => Error404()} src={icons.Circle_arrow_blue} alt="icone de seta em volta de circulo"/>
+                </div> 
+                <div className="banner-minor-container">
+                    <img src={imgs.Image_skincare} alt="imagem de mulher cuidando da pele"/>
+                    <div className="banner-minor">
+                        <p className="banner-minor-peels">Facepacks & Peels</p>
+                        <div className="banner-minor-icone">
+                            <img onClick={() => Error404()} src={icons.Circle_arrow_blue} alt="icone de seta em volta de circulo"/>
+                        </div>
                     </div>
-                </div>
-            </div> 
-        </StyledBannerMinor>
+                </div> 
+            </StyledBannerMinor>
+            <Trending />
+            <ImageTrending />
+        </>
         
     )
 }

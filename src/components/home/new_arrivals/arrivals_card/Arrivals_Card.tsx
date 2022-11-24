@@ -46,6 +46,9 @@ const StyledArrivalsCard = Styled.section`
     margin-top: 1rem;
     margin-left: 1rem; 
     overflow-x: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    } 
     .card-arrivals {
         margin-right: 1rem;
         img {

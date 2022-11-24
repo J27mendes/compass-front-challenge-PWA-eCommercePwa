@@ -12,7 +12,10 @@ const StyledTopCategories = Styled.section `
     .top-categories-mobile {
         display: flex;
         margin-top: 1rem;  
-        overflow-x: auto;     
+        overflow-x: auto;
+            &::-webkit-scrollbar{
+            display: none;
+        }      
         .top-categories-container {
             margin-right: 1rem;          
             img {

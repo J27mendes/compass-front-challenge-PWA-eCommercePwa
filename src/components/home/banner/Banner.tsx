@@ -49,6 +49,9 @@ const StyledBanner = Styled.div`
         margin-left: 1rem;
         margin-right: 2rem;
         overflow-x: auto;
+            &::-webkit-scrollbar{
+            display: none;
+        } 
         .banner-info-desktop {
             display: none
         }
