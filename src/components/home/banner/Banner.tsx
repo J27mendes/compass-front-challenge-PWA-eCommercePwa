@@ -45,7 +45,7 @@ const StyledBanner = Styled.div`
         display: none;
     }
     @media (max-width: 800px) {
-        margin-top: 4rem;
+        margin-top: 0rem; 
         margin-left: 1rem;
         margin-right: 2rem;
         overflow-x: auto;

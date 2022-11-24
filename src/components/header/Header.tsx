@@ -70,14 +70,16 @@ const StyledMenu = Styled.header`
   }
 
   @media(max-width: 800px){
+    position: relative;
     display: flex; 
-    width: 100%;
+    width: 92vw;
     padding-left: 1rem;
+    padding-right: 0rem;
     .header-mobile {
-      width: 100%;
+      width: 92vw;
       display: flex; 
       justify-content: space-between;
-      margin-right: 2rem;
+      margin-right: 1rem;
       .header-home-mobile {
         display: flex;
         align-items: center;

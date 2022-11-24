@@ -4,6 +4,7 @@ import Colors from "../../../globalStyles/Colors";
 const StyledMake = Styled.p`
 display: none;
 @media(max-width: 800px) {
+    width: 92vw;
     margin: 2rem 0 0 1rem;
     display: block;
     color: ${Colors.dark};

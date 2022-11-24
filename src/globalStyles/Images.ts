@@ -60,6 +60,10 @@ import Funk_mobile from '../assets/images_mobile/funk_mobile.png';
 import Pwa from '../assets/images_mobile/pwa.png';
 import Arrow_up from '../assets/images_mobile/arrow_up.svg';
 import Arrow_down from '../assets/images_mobile/arrow_down.svg';
+import Home_icon from '../assets/images_mobile/home_icon.svg';
+import Categories_icon from '../assets/images_mobile/categories_icon.svg';
+import User_icon from '../assets/images_mobile/user_icon.svg';
+import Bag_icon from '../assets/images_mobile/bag_icon.svg';
 
 export const icons = {
   Logo, 
@@ -98,7 +102,11 @@ export const iconsMobile = {
     Notification,
     Search_mobile,
     Arrow_down,
-    Arrow_up
+    Arrow_up,
+    Bag_icon,
+    Categories_icon,
+    Home_icon,
+    User_icon
 }
 
 export const image_mobile = {

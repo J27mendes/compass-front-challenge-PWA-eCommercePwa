@@ -68,12 +68,15 @@ const StyledFooter = Styled.section`
     }
 }
 @media(max-width: 800px){
+    .footer-more{
+        display: block;
+    }
     .footer-more {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-left: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
         width: 92vw;
         p {
             font-size: 0.9rem;
