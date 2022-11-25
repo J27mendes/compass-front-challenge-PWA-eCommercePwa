@@ -4,7 +4,7 @@ import Colors from "../../../../globalStyles/Colors";
 const StyledModalContinue = Styled.a`
 display: flex;
 justify-content: center;
-margin-top: 1.5rem;
+margin-top: 1rem;
 color: ${Colors.primary};
 font-size: 0.9rem;
 font-weight: 600;

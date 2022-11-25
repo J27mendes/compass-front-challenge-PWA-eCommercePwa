@@ -4,6 +4,10 @@ import Colors from "../../../globalStyles/Colors";
 const StyledProductTerms = Styled.div`
 margin-top: 2rem;
 display: flex;
+overflow-x: auto;
+    &::-webkit-scrollbar{
+    display: none;
+} 
 .product-terms {    
     display: flex;
     justify-content: space-between;
