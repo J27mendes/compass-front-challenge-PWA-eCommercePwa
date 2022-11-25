@@ -5,14 +5,13 @@ import Home from "./components/home/Home"
 import Products from "./components/products/Products"
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/category' element={<Category />} />
-        <Route path='/error' element={<Error />} />
-        <Route path='/products/:id' element={<Products />} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/category' element={<Category />} />
+          <Route path='/error' element={<Error />} />
+          <Route path='/products/:id' element={<Products />} />
       </Routes>
     </BrowserRouter>
   )
