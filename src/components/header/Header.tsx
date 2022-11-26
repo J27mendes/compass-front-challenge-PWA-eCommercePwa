@@ -1,7 +1,9 @@
+import { useState } from "react";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons, iconsMobile } from "../../globalStyles/Images";
 import { Error404 } from "../../routes/Routes";
+import HeaderSearch from "./header_search/Header_Search";
 
 const StyledMenu = Styled.header`
   position: fixed;
@@ -37,33 +39,6 @@ const StyledMenu = Styled.header`
     margin-left: 11rem;
     width: 520px; 
     justify-content: space-around;
-  }
-  .menu-search {
-    display: flex;
-    align-items: center;
-    height: 7vh;
-    background-color: ${Colors.grey};
-    border-radius: 5px;
-    img {
-      padding-left: 1rem;
-      cursor: pointer;
-    }
-    input{
-      border: none;
-      width: 320px;
-      padding-left: 1rem;
-      background-color: ${Colors.grey};
-      font-weight: 500;
-      font-size: 0.9rem;
-      
-    }
-    input::placeholder {
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-    input:focus {
-    outline: 0;
-    }
   }
   .header-mobile {
     display: none; 
@@ -109,6 +84,8 @@ const StyledMenu = Styled.header`
 `;
 
 const Header = () => {
+  const [search, setSearch] = useState("");
+  console.log(search)
   return (
     <StyledMenu>
       <div className="menu-header">
@@ -122,10 +99,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="menu-input">
-        <div className="menu-search">
-          <img src={icons.Search} alt="Icone de Lupa"/>
-          <input placeholder="Search for products or brands....." />
-        </div>
+        <HeaderSearch search={search} setSearch={setSearch} />
         <img className="menu-header-icons" src={icons.Like} alt="Icone de coração"/>
         <img className="menu-header-icons" onClick={() => Error404()} src={icons.User} alt="Icone de busto"/>
         <img className="menu-header-icons" src={icons.Bag} alt="Icone de bolsa"/>
@@ -137,7 +111,7 @@ const Header = () => {
         </div>
         <div className="header-icons-mobile">
           <img src={iconsMobile.Add_to} alt="icone mais - para adicionar "/>
-          <img src={iconsMobile.Search_mobile} alt="iconde de lupa - busca"/>
+          <img src={iconsMobile.Search_mobile} alt="icone de lupa - busca"/>
           <img src={iconsMobile.Notification} alt="icone de sino - notificação"/>
         </div>
       </div>
