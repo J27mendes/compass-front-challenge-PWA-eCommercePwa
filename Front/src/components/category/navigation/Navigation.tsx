@@ -23,6 +23,7 @@ const StyledNavigation = Styled.div`
 `;
 
 const Navigation = () => {
+    
     return (
         <StyledNavigation>
             <p className="navigation-first-page">Home</p>
