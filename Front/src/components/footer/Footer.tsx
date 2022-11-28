@@ -8,7 +8,7 @@ const StyledFooter = Styled.section`
 .footer-more {
     display: none;
 }
-.style-footer {
+.style-footer {    
     display: flex;
     justify-content: space-between;
     background-color: ${Colors.primary};
