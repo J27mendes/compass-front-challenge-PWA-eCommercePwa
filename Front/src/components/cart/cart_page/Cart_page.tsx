@@ -5,7 +5,6 @@ const StyledCartPage = Styled.h2`
 font-size: 2.1rem;
 color: ${Colors.primary};
 font-weight: 600;
-margin-bottom: 3rem;  
 margin-left: 2rem;  
 `;
 export default function CartPage (){

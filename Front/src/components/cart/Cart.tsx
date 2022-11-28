@@ -3,11 +3,13 @@ import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import CartNavigation from "./cart_navigation/Cart_Navigation";
 import CartPage from "./cart_page/Cart_page";
+import ProductListInfo from "./product_list_info/Product_List_Info";
 
 const StyledCart = Styled.div`
 display: flex;
+width: 100%;
 justify-content: space-between;
-margin-top: 6rem;
+margin-top: 3rem;
 `
 
 export default function Cart () {
@@ -17,7 +19,7 @@ export default function Cart () {
             <CartNavigation />
             <CartPage />
             <StyledCart>            
-                <div>???</div>
+             <ProductListInfo />
             </StyledCart> 
             <Footer />
         </>       
