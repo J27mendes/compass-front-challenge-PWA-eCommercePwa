@@ -16,7 +16,7 @@ const Category = () => {
             <StyledCategory>
                 <img src={imgs.Banner_category} alt="imagem de bolsa preta"/>
             </StyledCategory> 
-            <Navigation /> 
+            <Navigation/> 
             <InfoProducts />          
             <Footer />
         </>
