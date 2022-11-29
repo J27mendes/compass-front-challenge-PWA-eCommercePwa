@@ -1,6 +1,6 @@
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
-import { icons, products } from "../../../../globalStyles/Images";
+import { icons } from "../../../../globalStyles/Images";
 
 const StyledModalContainer = Styled.div`
     display: flex;
@@ -63,14 +63,14 @@ const StyledModalContainer = Styled.div`
     }    
 `;
 
-const ModalContainer = () => {
+const ModalContainer = ({image, info, name, price}: any) => {
   return (
     <StyledModalContainer>
-      <img src={products.Duffle_1} alt="imagem de bolsa com alça de couro" />
+      <img src={image} alt="imagem de bolsa com alça de couro" />
       <div className="modal-container">
         <div className="modal-info">
-          <p className="modal-info-name">Coach</p>
-          <p className="modal-info-description">Leather Coach Bag</p>
+          <p className="modal-info-name">{name}</p>
+          <p className="modal-info-description">{info}</p>
           <div className="quantity-details">
             <div className="quantity-change-minus">-</div>
             <p>1</p>
@@ -79,7 +79,7 @@ const ModalContainer = () => {
         </div>
         <div className="modal-close">
           <img src={icons.Close} alt="icone X para fechar o modal" />
-          <p>$54.69</p>
+          <p>{price}</p>
         </div>
       </div>
     </StyledModalContainer>

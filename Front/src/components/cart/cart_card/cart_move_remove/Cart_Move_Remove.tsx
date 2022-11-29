@@ -7,15 +7,15 @@ const StyledCartMoveRemove = Styled.div`
     width: 280px; 
     margin-left: 3rem;
     .move {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: ${Colors.primary};
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: underline; 
     }
     .remove {
-        font-size: 0.8rem;
-        color: ${Colors.red};
-        font-weight: 600;
+        font-size: 0.9rem;
+        color: ${Colors.banner_red};
+        font-weight: 700;
         text-decoration: underline; 
     }  
 `

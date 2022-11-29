@@ -1,5 +1,5 @@
 import ReactModal from "react-modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons } from "../../../globalStyles/Images";
@@ -9,6 +9,9 @@ import ModalPriceDetails from "./modal_price_details/Modal_Price_Details";
 import ModalCheck from "./modal_check/Modal_Check";
 import ModalPlaceButton from "./modal_place_button/Modal_Place_Button";
 import ModalContinue from "./modal_continue/Modal_Continue";
+import { allProducts } from '../../../mock/index';
+import { useParams } from 'react-router-dom';
+
 
 ReactModal.setAppElement("#root");
 
@@ -66,6 +69,14 @@ width: 360px;
 `;
 
 const ProductsButtons = () => {
+  const { id } = useParams();
+  const [cardProduct, setProduct] = useState<any>({})
+  useEffect(() => {
+      const [newProducts] = allProducts.filter((product) => product.id === Number(id))
+      setProduct(newProducts)
+  },[id]) 
+
+
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function handleOpenModal() {
@@ -84,7 +95,7 @@ const ProductsButtons = () => {
       bottom: "auto",
     },
   };
-  return (
+  return ( 
     <>
       <StyledProductsButtons>
         <button onClick={handleOpenModal} className="button-bag">
@@ -103,10 +114,8 @@ const ProductsButtons = () => {
       >
         <StyledModal>
           <ModalReturn />
-          <ModalContainer />
-          <hr />
-          <ModalContainer /> 
-          <hr />  
+          <ModalContainer image={cardProduct.img} info={cardProduct.info} name={cardProduct.name} price={cardProduct.price} />
+          <hr /> 
           <ModalPriceDetails />
           <ModalCheck /> 
           <ModalPlaceButton />
