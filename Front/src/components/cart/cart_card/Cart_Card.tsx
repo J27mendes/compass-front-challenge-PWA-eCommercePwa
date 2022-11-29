@@ -7,8 +7,8 @@ import CartProducts from "./cart_products/Cart_Products";
 const StyledCartCard = Styled.div`
 .column-container-cart {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: space-between; 
+    width: 85%;   
     margin-left: 2rem;
     margin-bottom: 2rem;
     .cart-container {

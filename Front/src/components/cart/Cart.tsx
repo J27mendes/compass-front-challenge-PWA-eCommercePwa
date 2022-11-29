@@ -6,14 +6,15 @@ import CartCard from "./cart_card/Cart_Card";
 import CartNavigation from "./cart_navigation/Cart_Navigation";
 import CartPage from "./cart_page/Cart_page";
 import ProductListInfo from "./product_list_info/Product_List_Info";
+import Sumary from "./sumary/Sumary";
 
 const StyledCart = Styled.div`
 display: flex;
-flex-direction: column;
-width: 100%;
-justify-content: space-between;
 margin-top: 3rem;
 margin-bottom: 2rem;
+.box-container {
+    width: 100%;
+}
 `;
 
 export default function Cart () {
@@ -22,10 +23,13 @@ export default function Cart () {
             <Header />
             <CartNavigation />
             <CartPage />
-            <StyledCart>            
-             <ProductListInfo />
-             <CartCard />
-             <CartApplyCode />
+            <StyledCart> 
+            <section className="box-container">           
+                <ProductListInfo />
+                <CartCard />
+                <CartApplyCode />
+            </section>
+            <Sumary />
             </StyledCart> 
             <Footer />
         </>       

@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 
 const StyledProductListInfo = Styled.div`
-width: 60%; 
+width: 85%; 
 height: 3vh; 
 margin-left: 2rem;
 margin-bottom: 2rem;
@@ -9,7 +9,7 @@ margin-bottom: 2rem;
 display: flex; 
 justify-content: space-between;
     .info-cart {
-        width: 30%;
+        width: 36%;
         display: flex;
         justify-content: space-between;
     }

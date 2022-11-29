@@ -3,9 +3,8 @@ import Styled from "styled-components";
 const StyledCartNextContainer = Styled.div`
     display: flex;  
     justify-content: space-between; 
-    margin-left: 2rem;
-    width: 220px;      
-`
+    margin-left: 3.5rem;      
+`;
 export default function CartNextContainer (){
     return (
         <StyledCartNextContainer>
@@ -13,6 +12,5 @@ export default function CartNextContainer (){
             <p className="qty-price">1</p>
             <p className="sub-total">$54.69</p>
         </StyledCartNextContainer>
-
     )
 }

@@ -3,8 +3,9 @@ import Colors from "../../../../globalStyles/Colors";
 
 const StyledCartMoveRemove = Styled.div`
     display: flex;
-    justify-content: space-evenly;  
-    width: 270px; 
+    justify-content: space-around;  
+    width: 280px; 
+    margin-left: 3rem;
     .move {
         font-size: 0.8rem;
         color: ${Colors.primary};

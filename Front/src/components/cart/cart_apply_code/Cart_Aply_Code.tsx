@@ -5,7 +5,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import Colors from "../../../globalStyles/Colors";
 
 const StyledCartApplyCode = Styled.div`
-width: 60%;
+width: 85%;
 margin-top: 3rem;
 margin-left: 2rem;  
     .coupon-code {
