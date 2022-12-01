@@ -3,6 +3,7 @@ import Styled from "styled-components";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import InputDefault from "./inputs_address/Inputs_Address";
+import SelectMethod from "./select_method/Select_Method";
 
 const StyledNewAddress = Styled.div`
 width: 85%;
@@ -26,12 +27,14 @@ export default function NewAddress (props:any){
         <StyledNewAddress>
             <div className="new-address">
                 <div onClick={() => setOpen(!open)} onBlur={() => setOpen(false)} className="open-address" >
-                    {props.address ? props.address : props.select }
+                    {open && props.address ? props.address : props.contact}
+                    {open && props.select ? props.select : props.payment }
                 </div>
                 {open ? <MdKeyboardArrowUp size={30} /> : <MdKeyboardArrowDown size={30} /> }
             </div>
             <hr />
             {open && props.address ? <InputDefault /> : null }
+            {open && props.select ? <SelectMethod /> : null }
         </StyledNewAddress>
     )
 }

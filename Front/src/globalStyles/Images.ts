@@ -64,6 +64,10 @@ import Home_icon from '../assets/images_mobile/home_icon.svg';
 import Categories_icon from '../assets/images_mobile/categories_icon.svg';
 import User_icon from '../assets/images_mobile/user_icon.svg';
 import Bag_icon from '../assets/images_mobile/bag_icon.svg';
+import Upi from '../assets/checkout/upi.svg';
+import Credit_card from '../assets/checkout/credit_card.png';
+import Pay from '../assets/checkout/pay.svg';
+import Amazon from '../assets/checkout/amazon.svg';
 
 export const icons = {
   Logo, 
@@ -147,4 +151,11 @@ export const imgs = {
     Creme,
     Banner_category,
     Error404
+}
+
+export const checkout = {
+    Pay,
+    Amazon,
+    Upi,
+    Credit_card
 }
