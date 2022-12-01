@@ -1,8 +1,8 @@
 import Styled from "styled-components";
-import Colors from "../../../globalStyles/Colors";
-import { icons } from "../../../globalStyles/Images";
+import Colors  from '../../../globalStyles/Colors';
+import { icons } from  '../../../globalStyles/Images';
 
-const StyledCardNavigation = Styled.div`
+const StyledCheckoutNavigation = Styled.div`
     display: flex;
     margin-left: 2rem;
     margin-top: 7rem;
@@ -22,12 +22,12 @@ const StyledCardNavigation = Styled.div`
     }    
 `;
 
-export default function CartNavigation (){
-    return(
-        <StyledCardNavigation>
+export default function CheckoutNavigation (){
+    return (
+        <StyledCheckoutNavigation>
             <p className="navigation-first-page">Home</p>
             <img src={icons.Cut_arrow_black} alt="sinal de maior q"/> 
-            <p className="navigation-next-page">My Cart</p>
-        </StyledCardNavigation>        
+            <p className="navigation-next-page">Checkout</p>
+        </StyledCheckoutNavigation>         
     )
 }

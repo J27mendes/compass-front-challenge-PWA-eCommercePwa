@@ -1,10 +1,10 @@
 import express from "express";
-import db from "./config/dbConnect.js";
-import routes from "./routes/index.js"
+import db from "./config/dbConnect";
+import routes from "./routes"
 
 db.on("erro", console.log.bind(console, "Erro de conexão"))
 db.once("open", () =>{
-    console.log("conexão com o banco realizada com sucesso")
+    console.log("Conexão com o banco de dados realiza com sucesso!")
 })
 
 const app = express();

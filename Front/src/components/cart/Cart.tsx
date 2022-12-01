@@ -22,7 +22,7 @@ export default function Cart () {
         <>
             <Header />
             <CartNavigation />
-            <CartPage />
+            <CartPage title={'My Cart'} />
             <StyledCart> 
             <section className="box-container">           
                 <ProductListInfo />
