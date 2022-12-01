@@ -20,18 +20,18 @@ margin-left: 2rem;
     }
 `;
 
-export default function NewAddress (){
+export default function NewAddress (props:any){
     const [open, setOpen] = useState(false);
     return (
         <StyledNewAddress>
             <div className="new-address">
-                <div onClick={() => setOpen(!open)} onBlur={() => setOpen(false)} className="open-address">
-                    Add New Address
+                <div onClick={() => setOpen(!open)} onBlur={() => setOpen(false)} className="open-address" >
+                    {props.address ? props.address : props.select }
                 </div>
                 {open ? <MdKeyboardArrowUp size={30} /> : <MdKeyboardArrowDown size={30} /> }
             </div>
             <hr />
-            {open ? <InputDefault /> : null }
+            {open && props.address ? <InputDefault /> : null }
         </StyledNewAddress>
     )
 }

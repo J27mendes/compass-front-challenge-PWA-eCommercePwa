@@ -20,7 +20,8 @@ export default function Checkout (){
             <CartPage title={'Checkout'}/>          
             <StyledCheckout>
                 <section className="box-container-checkout">
-                    <NewAddress />
+                    <NewAddress address={'Add New Address'}/>
+                    <NewAddress select={'Select Payment Method'} />
                 </section>
                 <Sumary />
             </StyledCheckout>

@@ -190,7 +190,6 @@ export default function InputDefault(){
                     </div>
                 </div>                    
             </form> 
-        </StyledInputDefault>
-        
+        </StyledInputDefault>        
     )
 }
