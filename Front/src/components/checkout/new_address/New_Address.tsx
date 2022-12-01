@@ -18,7 +18,7 @@ margin-left: 2rem;
             cursor: pointer;
         }  
     }
-`
+`;
 
 export default function NewAddress (){
     const [open, setOpen] = useState(false);
