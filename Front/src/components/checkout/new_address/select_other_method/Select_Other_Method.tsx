@@ -48,7 +48,7 @@ border-radius: 8px;
             font-weight: 500;
         } 
         label {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
             font-size: 0.8rem;
             color: ${Colors.low_emphasis};
         }
@@ -60,6 +60,7 @@ border-radius: 8px;
             color: ${Colors.low_emphasis};
             .check-upi {
                 margin-left: 0;
+                margin-right: 0.5rem;
                 width: 1rem;
                 height: 1rem;
             }
@@ -78,8 +79,23 @@ border-radius: 8px;
     align-items: center;
     justify-content: space-between;
     .phonepe-container{
-        margin-left: 1rem;
-    }
+        margin: 3rem 0 1rem 1rem;  
+        display: flex;
+        align-items: center;
+        img {
+            width: 45px;
+            height: 45px;
+            padding: 0.7rem;
+            border: solid 1px ${Colors.low_emphasis};
+            border-radius: 5px;
+            background-color: ${Colors.bright};
+        }
+        p {
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+    } 
+}
     .input-other {
         margin-right: 2rem;
         input {
@@ -93,7 +109,21 @@ border-radius: 8px;
     align-items: center;
     justify-content: space-between;
     .paytm-container{
-        margin-left: 1rem;
+        margin: 3rem 0 1rem 1rem;  
+        display: flex;
+        align-items: center;
+        img {
+            width: 45px;
+            height: 45px;
+            padding: 0.7rem;
+            border: solid 1px ${Colors.low_emphasis};
+            border-radius: 5px;
+            background-color: ${Colors.bright};
+        }
+        p {
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
     }
     .input-other {
         margin-right: 2rem;
@@ -103,7 +133,7 @@ border-radius: 8px;
         }
     }
 }
-`
+`;
 export default function SelectOtherMethod (){
     return (
         <StyledSelectOtherMethod>
