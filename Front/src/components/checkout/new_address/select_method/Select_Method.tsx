@@ -31,6 +31,9 @@ const StyledSelectMethod = Styled.form`
             font-weight: 600;
         }
     }
+    .select-method-amazon {
+        margin-right: 0rem;
+    }
 `;
 
 export default function SelectMethod (){
@@ -38,11 +41,11 @@ export default function SelectMethod (){
     const [isSelectedCredit, setSelectedCredit] = useState(false);
     const [isSelectedApple, setSelectedApple] = useState(false);
     const [isSelectedAmazon, setSelectedAmazon] = useState(false);
-    
+
     return (
         <StyledSelectMethod>
             <div className="select-method">
-                <input type="radio" checked={isSelectedUpi} onClick={() => setSelectedUpi(!isSelectedUpi)}/> 
+                <input type="radio" checked={isSelectedUpi} onClick={() => setSelectedUpi(!isSelectedUpi)} /> 
                 <img src={checkout.Upi} alt="pagamento com upi"/>
                 <p>UPI</p>
             </div>
@@ -55,12 +58,12 @@ export default function SelectMethod (){
                 <input type="radio" checked={isSelectedApple} onClick={() => setSelectedApple(!isSelectedApple)}/> 
                 <img src={checkout.Pay} alt="pagamento com pay"/>
                 <p>Apple Pay</p>
-            </div>
-            <div className="select-method">
+            </div>    
+            <div className="select-method select-method-amazon">
                 <input type="radio" checked={isSelectedAmazon} onClick={() => setSelectedAmazon(!isSelectedAmazon)}/> 
                 <img src={checkout.Amazon} alt="pagamento com amazon"/>
                 <p>Amazon Pay</p>
-            </div>
+            </div>            
         </StyledSelectMethod>
     )
 }

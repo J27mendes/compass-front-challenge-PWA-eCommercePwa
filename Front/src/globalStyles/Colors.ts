@@ -2,6 +2,7 @@ const Colors: any = {
     primary: "#1B4B66",
     primary_tinty: "#639599",
     color_banner: "#97451F",
+    light_blue: "#f3f7f7",
     high_emphasis: "#171520",
     low_emphasis: "#626262",
     dark: "#13101E",

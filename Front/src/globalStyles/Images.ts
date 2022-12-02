@@ -68,6 +68,9 @@ import Upi from '../assets/checkout/upi.svg';
 import Credit_card from '../assets/checkout/credit_card.png';
 import Pay from '../assets/checkout/pay.svg';
 import Amazon from '../assets/checkout/amazon.svg';
+import Google_pay from '../assets/checkout/google_pay.png';
+import PhonePe from '../assets/checkout/phonepe.svg';
+import Paytm from '../assets/checkout/paytm.svg';
 
 export const icons = {
   Logo, 
@@ -157,5 +160,8 @@ export const checkout = {
     Pay,
     Amazon,
     Upi,
-    Credit_card
+    Credit_card,
+    Google_pay,
+    PhonePe,
+    Paytm
 }

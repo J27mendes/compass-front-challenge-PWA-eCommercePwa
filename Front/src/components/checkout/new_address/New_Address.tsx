@@ -4,6 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import InputDefault from "./inputs_address/Inputs_Address";
 import SelectMethod from "./select_method/Select_Method";
+import SelectOtherMethod from "./select_other_method/Select_Other_Method";
 
 const StyledNewAddress = Styled.div`
 width: 85%;
@@ -34,7 +35,7 @@ export default function NewAddress (props:any){
             </div>
             <hr />
             {open && props.address ? <InputDefault /> : null }
-            {open && props.select ? <SelectMethod /> : null }
+            {open && props.select ? <><SelectMethod /> <SelectOtherMethod /></> : null }
         </StyledNewAddress>
     )
 }
