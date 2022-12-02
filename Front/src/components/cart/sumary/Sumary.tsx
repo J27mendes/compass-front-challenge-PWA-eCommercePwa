@@ -10,7 +10,7 @@ const StyleSumary = Styled.div`
 export default function Sumary () {
     return (
         <StyleSumary>
-            <OrderSumary />
+            <OrderSumary title={'Order Sumary'}/>
             <SumaryPrice />
         </StyleSumary>        
     )

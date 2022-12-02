@@ -5,11 +5,11 @@ font-weight: 700;
 font-size: 1.2rem;  
 `;
 
-export default function OrderSumary (){
+export default function OrderSumary (props:any){
     return (
         <>
             <StyledOrderSumary>
-                Order Summary
+                {props.title}
             </StyledOrderSumary>
         <hr />
         </>
