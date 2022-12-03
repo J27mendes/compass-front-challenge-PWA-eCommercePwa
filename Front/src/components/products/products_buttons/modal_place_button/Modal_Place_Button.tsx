@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
 
 const StyledModalPlaceButton = Styled.button`
+    text-decoration: none;
     width: 360px;
     height: 7vh;
     background-color: ${Colors.primary};
@@ -11,13 +13,16 @@ const StyledModalPlaceButton = Styled.button`
     border-radius: 8px; 
     border: none;
     margin-top: 1rem;  
+
 `;
 
 const ModalPlaceButton = () => {
     return (
-        <StyledModalPlaceButton>
-            Place Order
+        <Link to={'/cart'}>
+        <StyledModalPlaceButton>            
+            Place Order            
         </StyledModalPlaceButton> 
+        </Link>
     )
 }
 

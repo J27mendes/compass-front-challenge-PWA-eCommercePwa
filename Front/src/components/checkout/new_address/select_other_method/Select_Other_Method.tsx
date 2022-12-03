@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
 import { checkout } from "../../../../globalStyles/Images";
@@ -11,7 +12,6 @@ border-radius: 8px;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
-    background-color: ${Colors.light_blue};
     .upi-container {
         display: flex;
         flex-direction: column;
@@ -74,6 +74,10 @@ border-radius: 8px;
         }
     }
 }
+.other-method-upi:hover {
+    background-color: ${Colors.light_blue};
+}
+
 .other-method-phonepe {
     display: flex;
     align-items: center;
@@ -95,7 +99,7 @@ border-radius: 8px;
             font-weight: 600;
         }
     } 
-}
+
     .input-other {
         margin-right: 2rem;
         input {
@@ -103,7 +107,12 @@ border-radius: 8px;
             height: 1rem;
         }
     }
+
 }
+.other-method-phonepe:hover {
+    background-color: ${Colors.light_blue};
+}
+
 .other-method-paytm {
     display: flex;
     align-items: center;
@@ -133,8 +142,16 @@ border-radius: 8px;
         }
     }
 }
+.other-method-paytm:hover {
+    background-color: ${Colors.light_blue};
+}
 `;
 export default function SelectOtherMethod (){
+    const [isGoogleUpi, setGoogleUpi] = useState(false);
+    const [isPhonePe, setPhonePe] = useState(false);
+    const [isPaytm, setPaytm] = useState(false);
+    const [isCheck, setCheck] = useState(false);
+
     return (
         <StyledSelectOtherMethod>
             <div className="other-method-upi">
@@ -146,12 +163,12 @@ export default function SelectOtherMethod (){
                     <input placeholder="Enter your UPI Id"/>
                     <label>Eg: 1234567890@bi</label>
                     <label className="label-check">
-                        <input className="check-upi" type="checkbox" />
+                        <input className="check-upi" type="checkbox" checked={isCheck} onClick={() => setCheck(!isCheck)} />
                     Save this for fucture transactions
                     </label>
                 </div>
                 <div className="input-other">
-                    <input type="radio" />
+                    <input type="radio" checked={isGoogleUpi} onClick={() => setGoogleUpi(!isGoogleUpi)}/>
                 </div>
             </div>
             <div className="other-method-phonepe">
@@ -160,16 +177,16 @@ export default function SelectOtherMethod (){
                     <p>Phone Pe</p>
                 </div>
                 <div className="input-other">
-                    <input type="radio" />
+                    <input type="radio" checked={isPhonePe} onClick={() => setPhonePe(!isPhonePe)} />
                 </div>                
             </div>
             <div className="other-method-paytm">
                 <div className="paytm-container">
-                    <img src={checkout.Paytm} alt="" />
+                    <img src={checkout.Paytm} alt="pagamento com paytm" />
                     <p>Paytm</p>
                 </div>
                 <div className="input-other">
-                    <input type="radio" />
+                    <input type="radio" checked={isPaytm} onClick={() => setPaytm(!isPaytm)} />
                 </div>                
             </div>
         </StyledSelectOtherMethod>

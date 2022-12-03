@@ -34,6 +34,9 @@ const StyledSelectMethod = Styled.form`
     .select-method-amazon {
         margin-right: 0rem;
     }
+.select-method:hover {
+    background-color: ${Colors.light_blue};
+}
 `;
 
 export default function SelectMethod (){
