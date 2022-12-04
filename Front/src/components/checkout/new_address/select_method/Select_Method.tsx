@@ -31,6 +31,7 @@ const StyledSelectMethod = Styled.form`
             font-weight: 600;
         }
     }
+}
     .select-method-amazon {
         margin-right: 0rem;
     }
