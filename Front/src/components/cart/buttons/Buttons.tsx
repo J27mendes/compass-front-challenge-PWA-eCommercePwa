@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import ButtonPlace from "./button_place/Button_Place";
@@ -19,7 +20,7 @@ margin-top: 2rem;
 export default function Buttons (){
     return (
         <StyledButtons>
-            <ButtonPlace value={'Place Order'}/>
+            <Link to={'/checkout'} ><ButtonPlace value={'Place Order'}/></Link>
             <button className="continue-shopping">Continue Shopping</button>
         </StyledButtons>        
     )
