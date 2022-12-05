@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link} from 'react-router-dom'
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import ButtonPlace from "./button_place/Button_Place";
+
 
 const StyledButtons = Styled.div`
 display: flex;
@@ -18,9 +19,10 @@ margin-top: 2rem;
 `;
 
 export default function Buttons (){
+
     return (
         <StyledButtons>
-            <Link to={'/checkout'} ><ButtonPlace value={'Place Order'}/></Link>
+            <Link to={'/checkout'}><ButtonPlace value={'Place Order'}/></Link>
             <button className="continue-shopping">Continue Shopping</button>
         </StyledButtons>        
     )

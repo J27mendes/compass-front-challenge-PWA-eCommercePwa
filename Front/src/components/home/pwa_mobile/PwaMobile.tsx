@@ -11,8 +11,7 @@ display: none;
         width: 92vw;
     }
 }
-    
-`
+`;
 const Pwa = () => {
     
     return (

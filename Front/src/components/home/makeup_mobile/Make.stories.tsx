@@ -1,16 +1,16 @@
+import  MakeSkincare  from "./Make";
 import { Story } from "@storybook/react";
-import  Make  from "./Make";
 import { StyledAll } from "../../../globalStyles/Reset";
 
 
 export default {
     title: 'component/Home',
-    component: Make
+    component: MakeSkincare
 }
 
-export const PageMake: Story = () => (  
+export const PageMakeSkincare: Story = () => (  
     <> 
         <StyledAll />
-        <Make /> 
+        <MakeSkincare /> 
     </>    
 ) 

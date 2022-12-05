@@ -11,6 +11,5 @@ export const PageHeader: Story = () => (
     <>
         <StyledAll />
         <Header />
-    </>
-    
+    </> 
 )  
