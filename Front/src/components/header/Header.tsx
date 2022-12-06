@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../globalStyles/Colors";
 import { icons, iconsMobile } from "../../globalStyles/Images";
@@ -85,13 +86,13 @@ const StyledMenu = Styled.header`
 
 const Header = () => {
   const [search, setSearch] = useState("");
-  console.log(search)
+  const navigate = useNavigate();
   return (
     <StyledMenu>
       <div className="menu-header">
         <img className="menu-header-logo" src={icons.Logo} alt="logo Cora'l" />
         <ul className="menu-products">
-          <a href="/category" className="menu-list">Handbags</a>
+          <li onClick={() => {navigate('/category')}} className="menu-list">Handbags</li>
           <li className="menu-list" onClick={() => Error404()}>Watches</li>
           <li className="menu-list" onClick={() => Error404()}>Skincare</li>
           <li className="menu-list" onClick={() => Error404()}>Jewellery</li>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
 
@@ -17,12 +17,11 @@ const StyledModalPlaceButton = Styled.button`
 `;
 
 const ModalPlaceButton = () => {
+    const navigate = useNavigate();
     return (
-        <Link to={'/cart'}>
-        <StyledModalPlaceButton>            
+        <StyledModalPlaceButton onClick={() => {navigate('/cart')}}>            
             Place Order            
         </StyledModalPlaceButton> 
-        </Link>
     )
 }
 

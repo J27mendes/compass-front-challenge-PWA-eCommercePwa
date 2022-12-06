@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons, products } from "../../../globalStyles/Images";
 import Marking from "./pages_marking/Pages_Marking";
+import { useNavigate } from 'react-router-dom'
 
 const StyledCardCategory = Styled.div`
     display: flex;
@@ -10,6 +11,7 @@ const StyledCardCategory = Styled.div`
         margin-top: 2rem;
         margin-right: 2rem;
         text-decoration: none;
+        cursor: pointer;
         img {
             border-radius: 8px;
             margin-bottom: 0.5rem;
@@ -62,10 +64,11 @@ const StyledCardCategory = Styled.div`
 `;
 
 const CardCategory = () => {
+    const navigate = useNavigate();
     return (
         <>
             <StyledCardCategory>
-                <a href="/products/1" className="category-products">
+                <div onClick={() => {navigate('/products/1')}} className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -85,8 +88,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/3" className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/3')}} className="category-products">
                     <img src={products.Irene_unsplash_2} alt="imagem de bolsa de couro com corrente prateada" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Remus</p>
@@ -106,8 +109,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/2" className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/2')}} className="category-products">
                     <img src={products.Duffle_1} alt="imagem de bolsa e alça de couro" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Coach</p>
@@ -127,10 +130,10 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
+                </div>
             </StyledCardCategory> 
             <StyledCardCategory>
-                <a href="/products/4" className="category-products">
+                <div onClick={() => {navigate('/products/4')}} className="category-products">
                     <img src={products.Black_bag_1} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Boujee</p>
@@ -149,8 +152,8 @@ const CardCategory = () => {
                         <p className="price-real">$56.49</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/1"  className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/1')}}  className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -170,8 +173,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/1" className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/1')}} className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -191,10 +194,10 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
+                </div>
             </StyledCardCategory>
             <StyledCardCategory>
-                <a href="/products/1" className="category-products">
+                <div onClick={() => {navigate('/products/1')}} className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -214,8 +217,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/1" className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/1')}} className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -235,8 +238,8 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
-                <a href="/products/1" className="category-products">
+                </div>
+                <div onClick={() => {navigate('/products/1')}} className="category-products">
                     <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
                     <div className="card-products-info">
                         <p className="category-products-amount">Grande</p>
@@ -256,7 +259,7 @@ const CardCategory = () => {
                         <p className="suggested-price">$78.66</p>
                         <p className="price-descont">50% OFF</p>
                     </div>
-                </a>
+                </div>
             </StyledCardCategory> 
             <Marking />  
         </>     

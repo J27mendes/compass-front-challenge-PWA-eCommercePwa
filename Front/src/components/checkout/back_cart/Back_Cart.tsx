@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import ButtonPlace from "../../cart/buttons/button_place/Button_Place";
@@ -15,13 +16,16 @@ const StyledBackCart = Styled.div`
         font-size: 0.9rem;
         color: ${Colors.primary};
         font-weight: 600;
+        cursor: pointer;
     }
 `;
 
 export default function BackCart () {
+    const navigate = useNavigate();
+    
     return (
         <StyledBackCart>
-            <p>Back to Cart</p> 
+            <p onClick={() => {navigate('/cart')}}>Back to Cart</p>
             <ButtonPlace value={'Next'}/>           
         </StyledBackCart>
     )

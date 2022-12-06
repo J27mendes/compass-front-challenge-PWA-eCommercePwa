@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { products } from "../../../globalStyles/Images";
@@ -76,6 +76,8 @@ const StyledCollections = Styled.section`
 `;
 
 const Collections = () => {
+    const navigate = useNavigate();
+
     return (
         <StyledCollections>        
             <h2>Handpicked Collections</h2>
@@ -84,10 +86,10 @@ const Collections = () => {
                     <img src={products.Personal_care} alt="imagem de vidro de perfume"/>
                     <p>Personal Care</p>
                 </div>
-                <a href="/category" className="product-collections">
+                <div onClick={() => {navigate('/category')}} className="product-collections">
                     <img src={products.Handbags} alt="imagem de bolsa de mão"/>
                     <p>Handbags</p>
-                </a>
+                </div>
                 <div onClick={() => Error404()} className="product-collections">
                     <img src={products.Wrist_watches} alt="imagem de relógio"/>
                     <p>Wrist Watches</p>
@@ -103,10 +105,10 @@ const Collections = () => {
                         <img src={products.Personal_care} alt="imagem de vidro de perfume"/>
                         <p>Personal Care</p>
                     </div>
-                    <a href="/category" className="product-collections">
+                    <div onClick={() => {navigate('/category')}}  className="product-collections">
                         <img src={products.Handbags} alt="imagem de bolsa de mão"/>
                         <p className="p-collections">Handbags</p>
-                    </a>
+                    </div>
                 </div>
                 <div className="collections-mobile-container">
                     <div onClick={() => Error404()} className="product-collections">

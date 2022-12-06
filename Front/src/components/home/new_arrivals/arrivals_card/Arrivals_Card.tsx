@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import { icons } from "../../../../globalStyles/Images";
 import Colors from "../../../../globalStyles/Colors";
 import { allProducts } from "../../../../mock";
+import { useNavigate } from "react-router-dom"
 
 const StyledArrivalsCard = Styled.section`
     display: flex;
@@ -11,6 +12,7 @@ const StyledArrivalsCard = Styled.section`
     .card-arrivals {
         margin-right: 2rem;
         text-decoration: none;
+        cursor: pointer;
         img {
             width: 284px;
             height: 284px;
@@ -75,11 +77,12 @@ const StyledArrivalsCard = Styled.section`
 `;
 
 const ArrivalsCard = () => {
+    const navigate = useNavigate();
   return (
     <StyledArrivalsCard>      
         {
           allProducts.map((arrivals) => (
-            <div key={arrivals.id} className="card-arrivals">
+            <div onClick={() => {navigate('/category')}} key={arrivals.id} className="card-arrivals">
               <img src={arrivals.img} alt="imagem de bolsa cor de rosa" />
               <div className="arrivals-like">
                 <p className="arrivals-info">{arrivals.arrivalsInfo}</p>
