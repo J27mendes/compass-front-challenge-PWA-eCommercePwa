@@ -1,5 +1,7 @@
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
+import React from 'react';
+import InputMask from 'react-input-mask';
 
 const StyledInputDefault = Styled.div`
 .form-input {
@@ -90,9 +92,12 @@ const StyledInputDefault = Styled.div`
                     height: 8vh;
                     background-color: ${Colors.grey};
                     margin-right: 0.5rem;
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                    font-weight: 600;
+                    color: ${Colors.low_emphasis};
                 }
                 .input-DDD::placeholder {
-                    padding-left: 1rem;
                     font-size: 1rem;
                     font-weight: 600;
                 }
@@ -102,9 +107,12 @@ const StyledInputDefault = Styled.div`
                     width: 80%;
                     height: 8vh;
                     background-color: ${Colors.grey};
-                }
-                .input-number::placeholder {
                     padding-left: 1rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: ${Colors.low_emphasis};
+                }
+                .input-number::placeholder {                    
                     font-size: 1rem;
                     font-weight: 600;
                 }  
@@ -176,8 +184,8 @@ export default function InputDefault(){
                     <div className="form-mobile-number">
                         <label>Mobile Number</label>
                         <div className="inputs-mobile">
-                            <input className="input-DDD" placeholder="+11"/>
-                            <input className="input-number" placeholder="Enter Number"/>
+                            <InputMask className="input-DDD" placeholder="+11" mask="+99"/>
+                            <InputMask className="input-number" placeholder="Enter Number" mask="99999-9999"/>
                         </div>
                     </div>
                     <div className="form-state">
