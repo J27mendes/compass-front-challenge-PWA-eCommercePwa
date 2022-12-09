@@ -3,9 +3,11 @@ import Colors from "../../../globalStyles/Colors";
 import { icons, products } from "../../../globalStyles/Images";
 import Marking from "./pages_marking/Pages_Marking";
 import { useNavigate } from 'react-router-dom'
+// import { useEffect, useState } from "react";
 
 const StyledCardCategory = Styled.div`
     display: flex;
+    flex-wrap: wrap;
     .category-products {
         width: 285px;
         margin-top: 2rem;
@@ -63,204 +65,36 @@ const StyledCardCategory = Styled.div`
     }
 `;
 
-const CardCategory = () => {
+const CardCategory = ({infoCard}:any) => {
     const navigate = useNavigate();
+
     return (
         <>
             <StyledCardCategory>
-                <div onClick={() => {navigate('/products/1')}} className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
+                {infoCard.map((info:any) => (
+                    <div onClick={() => {navigate(`/products/${info.id}`)}} key={info.id} className="category-products">
+                        <img src={products.Duffle_1}  alt={info.arrivalsName} />
+                        <div className="card-products-info">
+                            <p className="category-products-amount">{info.arrivalsName}</p>
+                            <img src={icons.Like_black} alt="icone de coração" />
+                        </div>
+                        <p className="category-products-name">{info.arrivalsInfo}</p>
+                        <div className="card-like-star">
+                            <img src={icons.Star_full} alt="icone de estrela" />
+                            <img src={icons.Star_full} alt="icone de estrela" />
+                            <img src={icons.Star_full} alt="icone de estrela" />
+                            <img src={icons.Star_full} alt="icone de estrela" />
+                            <img src={icons.Star} alt="icone de estrela" />
+                            <p className="category-products-ratings">43 Ratings</p>
+                        </div>
+                        <div className="card-price-promotion">
+                            <p className="price-real">{info.arrivalsPrice}</p>
+                            <p className="suggested-price">$78.66</p>
+                            <p className="price-descont">50% OFF</p>
+                        </div>
                     </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/3')}} className="category-products">
-                    <img src={products.Irene_unsplash_2} alt="imagem de bolsa de couro com corrente prateada" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Remus</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Brown Strap Bag</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$57.00</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/2')}} className="category-products">
-                    <img src={products.Duffle_1} alt="imagem de bolsa e alça de couro" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Coach</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Leather Coach Bag</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$54.69</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-            </StyledCardCategory> 
-            <StyledCardCategory>
-                <div onClick={() => {navigate('/products/4')}} className="category-products">
-                    <img src={products.Black_bag_1} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Boujee</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Black Bag</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$56.49</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/1')}}  className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/1')}} className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
+                ))}
             </StyledCardCategory>
-            <StyledCardCategory>
-                <div onClick={() => {navigate('/products/1')}} className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/1')}} className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-                <div onClick={() => {navigate('/products/1')}} className="category-products">
-                    <img src={products.Pink_bag} alt="imagem de bolsa cor de rosa" />
-                    <div className="card-products-info">
-                        <p className="category-products-amount">Grande</p>
-                        <img src={icons.Like_black} alt="icone de coração" />
-                    </div>
-                    <p className="category-products-name">Blossom Pouch</p>
-                    <div className="card-like-star">
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star_full} alt="icone de estrela" />
-                        <img src={icons.Star} alt="icone de estrela" />
-                        <p className="category-products-ratings">43 Ratings</p>
-                    </div>
-                    <div className="card-price-promotion">
-                        <p className="price-real">$39.49</p>
-                        <p className="suggested-price">$78.66</p>
-                        <p className="price-descont">50% OFF</p>
-                    </div>
-                </div>
-            </StyledCardCategory> 
             <Marking />  
         </>     
     )

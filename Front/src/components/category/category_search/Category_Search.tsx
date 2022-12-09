@@ -2,6 +2,8 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons } from "../../../globalStyles/Images";
 import CardCategory from "../card_category/Card_Category";
+import { useState, useEffect } from 'react'
+import CategorySelect from "./category_select/Category_Select";
 
 const StyledCategorySearch = Styled.section`
   width: 78%;
@@ -43,25 +45,21 @@ const StyledCategorySearch = Styled.section`
         color: ${Colors.dark};
         margin-right: 0.5rem;
     }
-    select {
-        background-color: ${Colors.grey};
-        border: none;
-        font-size: 1rem;
-        font-weight: 500;
-        color: ${Colors.low_emphasis};
-        border-radius: 5px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-        padding-right: 6rem;
-        text-align: left;
-    }
 }
   
  
 `;
 
 const CategorySearch = () => {
+    const [category, setCategory] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3001/products')
+        .then((resp) => resp.json())
+        .then((data) => setCategory(data))
+        .catch((err) => console.log(err))
+    },[])  
+
     return (
         <StyledCategorySearch>
             <div className="category-search"> 
@@ -71,15 +69,9 @@ const CategorySearch = () => {
                 <p className="category-show">To Show:</p>
                 <div className="category-amount">9</div>
                 <p className="category-sort">Sort By</p>
-                <select name="position">
-                    <option value="">Position</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
+                <CategorySelect options={category} />
             </div>  
-            <CardCategory />           
+            <CardCategory infoCard={category}/>           
         </StyledCategorySearch> 
     )
 }
