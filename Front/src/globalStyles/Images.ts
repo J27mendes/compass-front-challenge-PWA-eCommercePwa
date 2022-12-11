@@ -71,6 +71,15 @@ import Amazon from '../assets/checkout/amazon.svg';
 import Google_pay from '../assets/checkout/google_pay.png';
 import PhonePe from '../assets/checkout/phonepe.svg';
 import Paytm from '../assets/checkout/paytm.svg';
+import Login_img_1 from '../assets/login/login_img_1.png';
+import Login_img_2 from '../assets/login/login_img_2.png';
+import Login_img_3 from '../assets/login/login_img_3.png';
+
+export const login = {
+    Login_img_1,
+    Login_img_2,
+    Login_img_3
+}
 
 export const icons = {
   Logo, 

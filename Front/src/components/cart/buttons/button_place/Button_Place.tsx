@@ -10,8 +10,10 @@ const StyledButtonPlace = Styled.button`
     padding: 0.7rem 3rem; 
     font-weight: 500; 
     margin-right: 3rem;    
-    cursor:pointer;
+    cursor: pointer;        
 `;
+
+
 
 export default function ButtonPlace(props:any){
     return (

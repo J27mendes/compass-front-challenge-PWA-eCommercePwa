@@ -55,6 +55,7 @@ width: 650px;
 `;
 
 const ProductsDetails = ({info, name, price}:any) => {
+   
     return (        
         <StyledProductsDetails>                            
             <p className="product-details-name">{info}</p>                                   

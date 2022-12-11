@@ -7,7 +7,10 @@ const productSchema = new mongoose.Schema(
         arrivalsInfo: {type: String, required: true},
         arrivalsName: {type: String, required: true},
         arrivalsPrice: {type: Number, required: true},
-        img: {type: String}
+        img: {
+            data: Buffer,
+            contentType: String
+        }
     }
 )
 

@@ -18,7 +18,7 @@ display: flex;
 const ProductsImage = ({image}:any) => {
     const { id } = useParams();
     const [cardProduct, setProduct] = useState<any>({})
-    useEffect(() => {
+    useEffect(() => {        
         const [newProducts] = allProducts.filter((product) => product.id === Number(id))
         setProduct(newProducts)
     },[id])  

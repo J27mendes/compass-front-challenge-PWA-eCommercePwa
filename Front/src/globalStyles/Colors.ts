@@ -13,7 +13,8 @@ const Colors: any = {
     error: "#B00020",
     highlight: "#FF8C4B",
     acent: "#F4F4F4",
-    red: "#f31a1a"
+    red: "#f31a1a",
+    login_bg: "#fff6e9"
 }
 
 export interface PropColors {

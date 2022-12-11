@@ -3,7 +3,7 @@ import Colors from "../../../globalStyles/Colors";
 import { icons, products } from "../../../globalStyles/Images";
 import Marking from "./pages_marking/Pages_Marking";
 import { useNavigate } from 'react-router-dom'
-// import { useEffect, useState } from "react";
+
 
 const StyledCardCategory = Styled.div`
     display: flex;

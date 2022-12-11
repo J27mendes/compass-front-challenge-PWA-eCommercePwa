@@ -4,6 +4,7 @@ import Category from "./components/category/Category"
 import Checkout from "./components/checkout/Checkout"
 import Error from "./components/error/Error"
 import Home from "./components/home/Home"
+import Login from "./components/login/Login"
 import Products from "./components/products/Products"
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/products/:id' element={<Products />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   )
