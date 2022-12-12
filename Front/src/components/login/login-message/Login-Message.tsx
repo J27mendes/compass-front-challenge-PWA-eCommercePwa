@@ -13,7 +13,7 @@ padding-bottom: 3rem;
     .login-title {
         font-size: 2.1rem;
         margin-left: 1.2rem;
-        color: black;
+        color: ${Colors.black};
         font-weight: 700;        
         line-height: 3rem; 
         width: 90%;       
@@ -36,12 +36,11 @@ padding-bottom: 3rem;
         text-decoration: none;
         align-self: center;
         margin-top: 1rem;
-        color: black;
+        color: ${Colors.black};
         font-weight: 600;
         font-size: 1.2rem;
         } 
-    }  
-    
+    }      
 `;
 export default function LoginMessage() {
     const navigate = useNavigate();
@@ -50,7 +49,7 @@ export default function LoginMessage() {
         <StyledLoginMessage>
             <div className='login-started'>
                 <h2 className='login-title'>The shopping destination you need</h2>
-                <button onClick={() => {navigate('/cart')}} className='login-enter'>Get Started</button>
+                <button onClick={() => {navigate('/signup')}} className='login-enter'>Get Started</button>
                 <a href="/error">I already have an account</a>
             </div>            
         </StyledLoginMessage> 

@@ -1,7 +1,6 @@
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
-import React from 'react';
-import InputMask from 'react-input-mask';
+import InputsMobile from "../inputs_mobile/Inputs_Mobile";
 
 const StyledInputDefault = Styled.div`
 .form-input {
@@ -83,40 +82,6 @@ const StyledInputDefault = Styled.div`
                 font-weight: 600;
                 margin-bottom: 0.8rem;
             }
-            .inputs-mobile {
-                display: flex;
-                .input-DDD {
-                    border: none;
-                    border-radius: 5px;
-                    width: 20%;
-                    height: 8vh;
-                    background-color: ${Colors.grey};
-                    margin-right: 0.5rem;
-                    font-size: 1rem;
-                    padding-left: 1rem;
-                    font-weight: 600;
-                    color: ${Colors.low_emphasis};
-                }
-                .input-DDD::placeholder {
-                    font-size: 1rem;
-                    font-weight: 600;
-                }
-                .input-number {
-                    border: none;
-                    border-radius: 5px;
-                    width: 80%;
-                    height: 8vh;
-                    background-color: ${Colors.grey};
-                    padding-left: 1rem;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    color: ${Colors.low_emphasis};
-                }
-                .input-number::placeholder {                    
-                    font-size: 1rem;
-                    font-weight: 600;
-                }  
-            }
         }
         .form-state {
             display: flex;
@@ -183,10 +148,7 @@ export default function InputDefault(){
                 <div className="form-container-right">
                     <div className="form-mobile-number">
                         <label>Mobile Number</label>
-                        <div className="inputs-mobile">
-                            <InputMask className="input-DDD" placeholder="+11" mask="+99"/>
-                            <InputMask className="input-number" placeholder="Enter Number" mask="99999-9999"/>
-                        </div>
+                        <InputsMobile />
                     </div>
                     <div className="form-state">
                         <label>State</label>

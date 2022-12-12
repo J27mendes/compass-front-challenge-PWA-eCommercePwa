@@ -3,10 +3,10 @@ import mongoose from 'mongoose'
 const productSchema = new mongoose.Schema(
     {
         id: {type: String},
-        categories:{type: Number, required: true},
-        arrivalsInfo: {type: String, required: true},
-        arrivalsName: {type: String, required: true},
-        arrivalsPrice: {type: Number, required: true},
+        categories:{type: Number},
+        arrivalsInfo: {type: String},
+        arrivalsName: {type: String},
+        arrivalsPrice: {type: Number},
         img: {
             data: Buffer,
             contentType: String

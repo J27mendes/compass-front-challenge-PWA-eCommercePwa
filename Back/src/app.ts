@@ -1,7 +1,8 @@
 import express from "express";
 import db from "./config/dbConnect";
 import routes from "./routes"
-import cors from 'cors'
+import cors from 'cors';
+import bodyParser from "body-parser";
 
 db.on("erro", console.log.bind(console, "Erro de conexão"))
 db.once("open", () =>{
@@ -10,6 +11,7 @@ db.once("open", () =>{
 
 const app = express();
 app.use(express.json());
+app.use(bodyParser.json())
 app.use((_req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     app.use(cors());
