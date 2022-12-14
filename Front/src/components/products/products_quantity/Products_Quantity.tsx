@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 
@@ -19,6 +20,7 @@ const StyledProductQuantity = Styled.div`
         border: solid 1px ${Colors.primary_tinty};
         .quantity-change-minus {
             font-size: 2.2rem;
+            cursor: pointer;
         }
         p {
             font-size: 1rem;
@@ -27,18 +29,33 @@ const StyledProductQuantity = Styled.div`
         }
         .quantity-change-plus {
             font-size: 1.8rem;
+            cursor: pointer;
         }           
     }
 `;
 
 const ProductQuantity = () => {
+    const [value, setValue] = useState(0);
+
+    function minus(){
+        if(value > 0){
+            setValue(valueAfter => valueAfter - 1)
+        } else {
+            setValue(0)
+        }
+        
+    }
+
+    function plus(){
+        setValue(valueAfter => valueAfter + 1)
+    }
     return (
         <StyledProductQuantity>
             <p>Quantity:</p>  
             <div className="quantity-details">
-                <div className="quantity-change-minus">-</div>
-                <p>1</p>
-                <div className="quantity-change-plus">+</div>
+                <div onClick={minus} className="quantity-change-minus">-</div>
+                <p>{value}</p>
+                <div onClick={plus} className="quantity-change-plus">+</div>
             </div>          
         </StyledProductQuantity>       
     )

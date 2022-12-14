@@ -135,16 +135,18 @@ export default function EnterCode(){
             <div className='signup-grey'></div>
             <h1>Enter OTP</h1>
             <p className="signUp-info-message">A 4 digit code will be sent to this number.</p>
-            <div className="input-enter-code">
-                <InputMask className='enter-first-code' placeholder="*" mask='9'/>
-                <InputMask className='enter-second-code' placeholder="*" mask='9' />
-                <InputMask className='enter-third-code' placeholder="*" mask='9' />
-                <InputMask className='enter-fourth-code' placeholder="*" mask='9' />
-            </div>
-            <div className='code-request'>
-                <p>Didn't recieve ther code?</p><p onClick={() => {navigate('/signup')}} className="request-again">Request Again</p>
-            </div>
-            <button onClick={() => navigate('/enterCode')} className="signup-next">Verify & Create Account</button>         
+            <form>
+                <div className="input-enter-code">
+                    <InputMask className='enter-first-code' placeholder="*" mask='9'/>
+                    <InputMask className='enter-second-code' placeholder="*" mask='9' />
+                    <InputMask className='enter-third-code' placeholder="*" mask='9' />
+                    <InputMask className='enter-fourth-code' placeholder="*" mask='9' />
+                </div>
+                <div className='code-request'>
+                    <p>Didn't recieve ther code?</p><p onClick={() => {navigate('/signup')}} className="request-again">Request Again</p>
+                </div>
+                <button onClick={() => navigate('/enterCode')} className="signup-next">Verify & Create Account</button>
+            </form>         
         </StyledEnterCode>       
     )
 }
