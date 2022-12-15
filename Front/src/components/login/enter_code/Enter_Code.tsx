@@ -147,7 +147,7 @@ export default function EnterCode(){
             values.second === '2' &&
             values.third === '3' &&
             values.fourth === '4'
-        ) {navigate('/')}
+        ) {navigate('/home')}
         else {
             alert('O código enviado está incorreto')
         }

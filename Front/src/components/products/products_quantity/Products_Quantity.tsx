@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
+import useContext from '../../../context/useContext';
 
 const StyledProductQuantity = Styled.div`
     display: flex;
@@ -35,27 +36,28 @@ const StyledProductQuantity = Styled.div`
 `;
 
 const ProductQuantity = () => {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState(1);
+    const { setProducts } = useContext();
 
     function minus(){
         if(value > 0){
             setValue(valueAfter => valueAfter - 1)
         } else {
             setValue(0)
-        }
-        
+        }        
     }
 
     function plus(){
         setValue(valueAfter => valueAfter + 1)
     }
+
     return (
         <StyledProductQuantity>
             <p>Quantity:</p>  
             <div className="quantity-details">
-                <div onClick={minus} className="quantity-change-minus">-</div>
+                <div onClick={() => {minus() ; setProducts(value)}} className="quantity-change-minus">-</div>
                 <p>{value}</p>
-                <div onClick={plus} className="quantity-change-plus">+</div>
+                <div onClick={() => {plus() ; setProducts(value)}} className="quantity-change-plus">+</div>
             </div>          
         </StyledProductQuantity>       
     )

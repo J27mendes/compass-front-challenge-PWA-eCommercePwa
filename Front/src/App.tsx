@@ -16,13 +16,13 @@ const App = () => {
     <AppContextProvider>
       <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<Login />} />
             <Route path='/category' element={<Category />} />
             <Route path='/error' element={<Error />} />
             <Route path='/products/:id' element={<Products />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/enterCode" element={<EnterCode />} />
         </Routes>

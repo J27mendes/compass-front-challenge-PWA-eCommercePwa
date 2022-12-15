@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import useContext from '../../../../context/useContext';
 import Styled from "styled-components";
 import Colors from "../../../../globalStyles/Colors";
 import { icons } from "../../../../globalStyles/Images";
@@ -64,6 +66,26 @@ const StyledModalContainer = Styled.div`
 `;
 
 const ModalContainer = ({image, info, name, price}: any) => {
+  const [value, setValue] = useState(1);
+
+  function minus (){
+      if(value > 0){
+        setValue(valueAfter => valueAfter - 1)
+    } else {
+        setValue(0)
+    }  
+  }
+
+  function plus(){
+    setValue(valueAfter => valueAfter + 1)
+}
+
+const { products } = useContext();
+useEffect(() => {
+setValue(products+1)
+},[products])
+
+
   return (
     <StyledModalContainer>
       <img src={image} alt="imagem de bolsa com alça de couro" />
@@ -72,9 +94,9 @@ const ModalContainer = ({image, info, name, price}: any) => {
           <p className="modal-info-name">{name}</p>
           <p className="modal-info-description">{info}</p>
           <div className="quantity-details">
-            <div className="quantity-change-minus">-</div>
-            <p>1</p>
-            <div className="quantity-change-plus">+</div>
+            <div onClick={minus} className="quantity-change-minus">-</div>
+            <p>{value}</p>
+            <div onClick={plus} className="quantity-change-plus">+</div>
           </div>
         </div>
         <div className="modal-close">
