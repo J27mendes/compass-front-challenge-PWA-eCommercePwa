@@ -66,7 +66,11 @@ const StyledModalContainer = Styled.div`
 `;
 
 const ModalContainer = ({image, info, name, price}: any) => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState(0);
+  const { products } = useContext();
+    useEffect(() => {
+    setValue(products)
+  },[products])
 
   function minus (){
       if(value > 0){
@@ -79,12 +83,6 @@ const ModalContainer = ({image, info, name, price}: any) => {
   function plus(){
     setValue(valueAfter => valueAfter + 1)
 }
-
-const { products } = useContext();
-useEffect(() => {
-setValue(products+1)
-},[products])
-
 
   return (
     <StyledModalContainer>

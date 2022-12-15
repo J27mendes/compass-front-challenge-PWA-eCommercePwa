@@ -21,12 +21,12 @@ const StyledModalPriceDetails = Styled.div`
     font-weight: 600; 
   }  
 `;
-const ModalPriceDetails = () => {
+const ModalPriceDetails = ({price}:any) => {
     return (
         <StyledModalPriceDetails>
             <div className="modal-subtotal">
                 <p>Subtotal:</p>
-                <p>$109.38</p>
+                <p>{price}</p>
             </div>
             <div className="modal-tax">
                 <p>Tax:</p>

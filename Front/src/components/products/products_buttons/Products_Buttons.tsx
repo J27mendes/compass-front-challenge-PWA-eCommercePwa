@@ -114,9 +114,9 @@ const ProductsButtons = () => {
       >
         <StyledModal>
           <ModalReturn />
-          <ModalContainer image={cardProduct.img} info={cardProduct.info} name={cardProduct.name} price={cardProduct.price} />
+          <ModalContainer image={cardProduct.img} info={cardProduct.arrivalsInfo} name={cardProduct.arrivalsName} price={cardProduct.arrivalsPrice}/>
           <hr /> 
-          <ModalPriceDetails />
+          <ModalPriceDetails price={cardProduct.arrivalsPrice}/>
           <ModalCheck /> 
           <ModalPlaceButton />
           <ModalContinue />     

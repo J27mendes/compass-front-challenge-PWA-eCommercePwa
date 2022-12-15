@@ -54,11 +54,10 @@ width: 650px;
     }
 `;
 
-const ProductsDetails = ({info, name, price}:any) => {
-   
+const ProductsDetails = ({info, name, price}:any) => {   
     return (        
         <StyledProductsDetails>                            
-            <p className="product-details-name">{info}</p>                                   
+            <p className="product-details-name" >{info}</p>                                   
             <p className="product-details-description">{name}</p>            
             <div className="product-details-icons">
                 <img className="product-icons" src={icons.Star_light} alt="icone de estrela" />
@@ -69,7 +68,7 @@ const ProductsDetails = ({info, name, price}:any) => {
                 <p className="product-details-aproved">(250) Ratings</p>
             </div>
             <div className="product-price-promotion">
-                <p className="product-price-real">{price}</p>
+                <p className="product-price-real" >{price}</p>
                 <p className="product-suggested-price">$78.66</p>
                 <p className="product-price-descont">50% OFF</p>
             </div>

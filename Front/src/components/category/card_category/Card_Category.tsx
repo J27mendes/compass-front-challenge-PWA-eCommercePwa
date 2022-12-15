@@ -2,8 +2,7 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import { icons, products } from "../../../globalStyles/Images";
 import Marking from "./pages_marking/Pages_Marking";
-import { useNavigate } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom';
 
 const StyledCardCategory = Styled.div`
     display: flex;

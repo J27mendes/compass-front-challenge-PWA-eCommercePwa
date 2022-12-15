@@ -36,7 +36,7 @@ const StyledProductQuantity = Styled.div`
 `;
 
 const ProductQuantity = () => {
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState(0);
     const { setProducts } = useContext();
 
     function minus(){
@@ -55,9 +55,9 @@ const ProductQuantity = () => {
         <StyledProductQuantity>
             <p>Quantity:</p>  
             <div className="quantity-details">
-                <div onClick={() => {minus() ; setProducts(value)}} className="quantity-change-minus">-</div>
+                <div onClick={() => {minus() ; setProducts(value - 1)}} className="quantity-change-minus">-</div>
                 <p>{value}</p>
-                <div onClick={() => {plus() ; setProducts(value)}} className="quantity-change-plus">+</div>
+                <div onClick={() => {plus() ; setProducts(value + 1)}} className="quantity-change-plus">+</div>
             </div>          
         </StyledProductQuantity>       
     )

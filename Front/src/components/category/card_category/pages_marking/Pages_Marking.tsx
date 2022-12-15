@@ -38,6 +38,7 @@ const StyledMarking = Styled.div`
 `;
 
 const Marking = () => {
+    
     return (
         <StyledMarking>
             <div className="page-marking">

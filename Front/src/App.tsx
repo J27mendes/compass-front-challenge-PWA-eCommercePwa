@@ -8,7 +8,7 @@ import EnterCode from "./components/login/enter_code/Enter_Code"
 import Login from "./components/login/Login"
 import SignUp from "./components/login/signup/SignUp"
 import Products from "./components/products/Products"
-import { AppContextProvider } from "./context/Context"
+import  AppContextProvider  from "./context/Context"
 
 const App = () => {
   return (
