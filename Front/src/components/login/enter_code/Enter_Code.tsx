@@ -2,6 +2,7 @@ import Styled from "styled-components";
 import Colors from "../../../globalStyles/Colors";
 import InputMask from 'react-input-mask';
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const StyledEnterCode = Styled.div`
      .signup-grey {
@@ -128,25 +129,46 @@ const StyledEnterCode = Styled.div`
 `;
 
 export default function EnterCode(){
-    const navigate = useNavigate()
+    const [values, setValues] = useState<any>({});
+    const navigate = useNavigate();
+
+    const handle = (target:any) => {
+        const {name, value} = target
+        setValues({
+            ...values,
+            [name]:value
+        })
+        
+    }
+
+    const redirect = () => {
+        if(
+            values.first === '1' && 
+            values.second === '2' &&
+            values.third === '3' &&
+            values.fourth === '4'
+        ) {navigate('/')}
+        else {
+            alert('O código enviado está incorreto')
+        }
+    }
     
     return(
         <StyledEnterCode>
             <div className='signup-grey'></div>
             <h1>Enter OTP</h1>
             <p className="signUp-info-message">A 4 digit code will be sent to this number.</p>
-            <form>
-                <div className="input-enter-code">
-                    <InputMask className='enter-first-code' placeholder="*" mask='9'/>
-                    <InputMask className='enter-second-code' placeholder="*" mask='9' />
-                    <InputMask className='enter-third-code' placeholder="*" mask='9' />
-                    <InputMask className='enter-fourth-code' placeholder="*" mask='9' />
-                </div>
-                <div className='code-request'>
-                    <p>Didn't recieve ther code?</p><p onClick={() => {navigate('/signup')}} className="request-again">Request Again</p>
-                </div>
-                <button onClick={() => navigate('/enterCode')} className="signup-next">Verify & Create Account</button>
-            </form>         
+            <div className="input-enter-code">
+                <InputMask name="first" onChange={({target}) => handle(target)} className='enter-first-code' placeholder="*" mask='9'/>
+                <InputMask name="second" onChange={({target}) => handle(target)} className='enter-second-code' placeholder="*" mask='9' />
+                <InputMask name="third" onChange={({target}) => handle(target)} className='enter-third-code' placeholder="*" mask='9' />
+                <InputMask name="fourth" onChange={({target}) => handle(target)} className='enter-fourth-code' placeholder="*" mask='9' />
+            </div>
+            <div className='code-request'>
+                <p>Didn't recieve ther code?</p><p onClick={() => {navigate('/signup')}} className="request-again">Request Again</p>
+            </div>
+            <button onClick={() => redirect()} className="signup-next">Verify & Create Account</button>
+                   
         </StyledEnterCode>       
     )
 }
