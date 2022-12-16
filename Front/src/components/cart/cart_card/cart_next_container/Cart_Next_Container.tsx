@@ -7,12 +7,13 @@ const StyledCartNextContainer = Styled.div`
     margin-left: 3.5rem;      
 `;
 export default function CartNextContainer (){
-    const { products } = useContext()
+    const { products } = useContext();
+      
     return (
         <StyledCartNextContainer>
-            <p className="price">$54.69---{products.calc}</p>
+            <p className="price">$54.69</p>
             <p className="qty-price">{products}</p>
-            <p className="sub-total">$54.69---{products.calc}</p>
+            <p className="sub-total">$54.69</p>
         </StyledCartNextContainer>
     )
 }
