@@ -67,7 +67,7 @@ const CategorySearch = () => {
                 <img src={icons.Grid_grey} alt="icone de lista na cor cinza" />
                 <p className="category-amount-items">Showing 1 - 40 of 145 items</p>          
                 <p className="category-show">To Show:</p>
-                <div className="category-amount">9</div>
+                <div className="category-amount">{category.length}</div>
                 <p className="category-sort">Sort By</p>
                 <CategorySelect options={category} />
             </div>  
