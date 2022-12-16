@@ -24,26 +24,26 @@ const StyledModalPriceDetails = Styled.div`
   }  
 `;
 const ModalPriceDetails = ({price}:any) => {
-  const [calc, setCalc] = useState(price + 2.00);
+  const [calc, setCalc] = useState(price);
   const { products } = useContext();
 
-    return (
-        <StyledModalPriceDetails>
-            <div className="modal-subtotal">
-                <p>Subtotal:</p>
-                <p>{`$${price}`}</p>
-            </div>
-            <div className="modal-tax">
-                <p>Tax:</p>
-                <p>$2.00</p>
-            </div>
-            <div className="modal-total">
-                <p>Total:</p>
-                <p>{`$${(calc * products).toFixed(2)}`}</p>
-            </div>
-        </StyledModalPriceDetails>
-        
-    )
+  return (
+      <StyledModalPriceDetails>
+          <div className="modal-subtotal">
+              <p>Subtotal:</p>
+              <p>{`$${(calc * products).toFixed(2)}`}</p>
+          </div>
+          <div className="modal-tax">
+              <p>Tax:</p>
+              <p>$2.00</p>
+          </div>
+          <div className="modal-total">
+              <p>Total:</p>
+              <p>{`$${(calc * products + 2.00).toFixed(2)}`}</p>
+          </div>
+      </StyledModalPriceDetails>
+      
+  )
 }
 
 export default ModalPriceDetails

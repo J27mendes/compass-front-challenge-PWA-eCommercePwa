@@ -100,7 +100,7 @@ const ModalContainer = ({image, info, name, price}: any) => {
         </div>
         <div className="modal-close">
           <img src={icons.Close} alt="icone X para fechar o modal" />
-          <p>{`$${price}`}</p>
+          <p>{`$${(price * value).toFixed(2)}`}</p>
         </div>
       </div>
     </StyledModalContainer>

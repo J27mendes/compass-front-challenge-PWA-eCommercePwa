@@ -18,6 +18,7 @@ const StyledModalPlaceButton = Styled.button`
 
 const ModalPlaceButton = () => {
     const navigate = useNavigate();
+    
     return (
         <StyledModalPlaceButton onClick={() => {navigate('/cart')}}>            
             Place Order            
