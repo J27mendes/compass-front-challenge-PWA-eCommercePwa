@@ -13,20 +13,20 @@ export const allProducts = [
         img: products.Duffle_1,
         arrivalsInfo: 'Coach',
         arrivalsName: 'Leather Coach Bag',
-        arrivalsPrice: '$54.69'
+        arrivalsPrice: 54.69
     },
     {
         id: 3,
         img: products.Irene_unsplash_2,
         arrivalsInfo: 'Remus',
         arrivalsName: 'Brown Strap Bag',
-        arrivalsPrice: '$57.00'
+        arrivalsPrice: 57.00
     },
     {
         id: 4,
         img: products.Black_bag_1,
         arrivalsInfo: 'Boujee',
         arrivalsName: 'Black Bag',
-        arrivalsPrice: '$56.49'
+        arrivalsPrice: 56.49
     }
 ]
