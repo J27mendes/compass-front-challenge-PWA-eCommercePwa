@@ -6,7 +6,7 @@ export const allProducts = [
         img: products.Pink_bag,
         arrivalsInfo: 'Grande',
         arrivalsName: 'Blossom Pouch',
-        arrivalsPrice: '$39.49'
+        arrivalsPrice: 39.49
     },
     {
         id: 2,

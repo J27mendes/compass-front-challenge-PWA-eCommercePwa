@@ -68,6 +68,7 @@ const StyledModalContainer = Styled.div`
 const ModalContainer = ({image, info, name, price}: any) => {
   const [value, setValue] = useState(0);
   const { products } = useContext();
+
     useEffect(() => {
     setValue(products)
   },[products])
@@ -81,8 +82,8 @@ const ModalContainer = ({image, info, name, price}: any) => {
   }
 
   function plus(){
-    setValue(valueAfter => valueAfter + 1)
-}
+      setValue(valueAfter => valueAfter + 1)
+  }
 
   return (
     <StyledModalContainer>
@@ -99,7 +100,7 @@ const ModalContainer = ({image, info, name, price}: any) => {
         </div>
         <div className="modal-close">
           <img src={icons.Close} alt="icone X para fechar o modal" />
-          <p>{price}</p>
+          <p>{`$${price}`}</p>
         </div>
       </div>
     </StyledModalContainer>

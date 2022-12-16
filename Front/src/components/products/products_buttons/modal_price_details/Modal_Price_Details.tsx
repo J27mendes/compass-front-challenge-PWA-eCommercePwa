@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import useContext from '../../../../context/useContext'
 import Styled from "styled-components";
 
 const StyledModalPriceDetails = Styled.div`
@@ -22,11 +24,14 @@ const StyledModalPriceDetails = Styled.div`
   }  
 `;
 const ModalPriceDetails = ({price}:any) => {
+  const [calc, setCalc] = useState(price + 2.00);
+  const { products } = useContext();
+
     return (
         <StyledModalPriceDetails>
             <div className="modal-subtotal">
                 <p>Subtotal:</p>
-                <p>{price}</p>
+                <p>{`$${price}`}</p>
             </div>
             <div className="modal-tax">
                 <p>Tax:</p>
@@ -34,7 +39,7 @@ const ModalPriceDetails = ({price}:any) => {
             </div>
             <div className="modal-total">
                 <p>Total:</p>
-                <p>$111.38</p>
+                <p>{`$${(calc * products).toFixed(2)}`}</p>
             </div>
         </StyledModalPriceDetails>
         
