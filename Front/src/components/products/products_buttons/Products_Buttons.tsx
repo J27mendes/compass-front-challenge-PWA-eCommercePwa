@@ -11,6 +11,7 @@ import ModalPlaceButton from "./modal_place_button/Modal_Place_Button";
 import ModalContinue from "./modal_continue/Modal_Continue";
 import { allProducts } from '../../../mock/index';
 import { useParams } from 'react-router-dom';
+import ProductWishlist from "../ProductsWishlist/ProductsWishlisr";
 
 
 ReactModal.setAppElement("#root");
@@ -31,27 +32,6 @@ const StyledProductsButtons = Styled.div`
         padding-top: 1rem;
         padding-right: 3rem;        
         margin-right: 2rem;
-        cursor: pointer;
-        img {
-        width: 25px;
-        height: 25px;
-        margin-top: -0.5rem;
-        }
-    }
-    .button-bag-list {
-        display: flex;
-        justify-content: center;
-        background-color: ${Colors.bright};
-        color: ${Colors.primary};
-        border: solid 2px ${Colors.primary};
-        border-radius: 8px;  
-        width: 260px; 
-        height: 8vh;
-        font-weight: 700;
-        padding-top: 1rem;
-        padding-right: 3rem;        
-        margin-right: 2rem;
-        font-size: 0.9rem;
         cursor: pointer;
         img {
         width: 25px;
@@ -102,10 +82,7 @@ const ProductsButtons = () => {
           <img src={icons.Bag_white} alt="icone de sacola" />
           Add to bag
         </button>
-        <button className="button-bag-list">
-          <img src={icons.Like} alt="icone de sacola" />
-          Add to Wishlist
-        </button>
+        <ProductWishlist text={'Add to Wishlist'} />
       </StyledProductsButtons>
       <ReactModal
         isOpen={modalIsOpen}

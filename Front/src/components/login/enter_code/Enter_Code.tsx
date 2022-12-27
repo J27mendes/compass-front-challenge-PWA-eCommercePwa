@@ -3,13 +3,9 @@ import Colors from "../../../globalStyles/Colors";
 import InputMask from 'react-input-mask';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import SignUpGrey from "../SignupGrey/SignupGrey";
 
 const StyledEnterCode = Styled.div`
-     .signup-grey {
-        background-color: ${Colors.grey};
-        width: 100%;
-        height: 5vh;
-    }
     h1 {
         color: ${Colors.primary};
         font-size: 2.5rem;
@@ -147,7 +143,7 @@ export default function EnterCode(){
             values.second === '2' &&
             values.third === '3' &&
             values.fourth === '4'
-        ) {navigate('/home')}
+        ) {navigate('/Profile')}
         else {
             alert('O código enviado está incorreto')
         }
@@ -155,7 +151,7 @@ export default function EnterCode(){
     
     return(
         <StyledEnterCode>
-            <div className='signup-grey'></div>
+            <SignUpGrey />
             <h1>Enter OTP</h1>
             <p className="signUp-info-message">A 4 digit code will be sent to this number.</p>
             <div className="input-enter-code">

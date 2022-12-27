@@ -2,13 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import Styled from 'styled-components';
 import Colors from '../../../globalStyles/Colors';
 import InputsMobile from '../../checkout/new_address/inputs_mobile/Inputs_Mobile';
+import SignUpGrey from '../SignupGrey/SignupGrey';
 
 const StyledSignUp = Styled.div`
-    .signup-grey {
-        background-color: ${Colors.grey};
-        width: 100%;
-        height: 5vh;
-    }
     h1 {
         color: ${Colors.primary};
         font-size: 2.5rem;
@@ -44,7 +40,7 @@ export default function SignUp () {
     const navigate = useNavigate()
     return (
         <StyledSignUp>
-            <div className='signup-grey'></div>
+            <SignUpGrey />
             <h1>Enter your phone number</h1>
             <div className='input-mobile-container'>
                 <InputsMobile />

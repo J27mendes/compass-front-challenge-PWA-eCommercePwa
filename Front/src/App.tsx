@@ -6,9 +6,10 @@ import Error from "./components/error/Error"
 import Home from "./components/home/Home"
 import EnterCode from "./components/login/enter_code/Enter_Code"
 import Login from "./components/login/Login"
-import SignUp from "./components/login/signup/SignUp"
-import Products from "./components/products/Products"
-import  AppContextProvider  from "./context/Context"
+import SignUp from "./components/login/signup/SignUp";
+import Products from "./components/products/Products";
+import Profile from "./components/Profile/Profile";
+import  AppContextProvider  from "./context/Context";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/enterCode" element={<EnterCode />} />
+            <Route path="/Profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </AppContextProvider>

@@ -74,11 +74,22 @@ import Paytm from '../assets/checkout/paytm.svg';
 import Login_img_1 from '../assets/login/login_img_1.png';
 import Login_img_2 from '../assets/login/login_img_2.png';
 import Login_img_3 from '../assets/login/login_img_3.png';
+import Taina from '../assets/perfis/taina.png';
+import Bianca from '../assets/perfis/bianca.png';
+import Renata from '../assets/perfis/renata.png';
+import Rose from '../assets/perfis/rose.png';
 
 export const login = {
     Login_img_1,
     Login_img_2,
     Login_img_3
+}
+
+export const perfis = {
+    Taina,
+    Rose,
+    Renata,
+    Bianca
 }
 
 export const icons = {

@@ -9,12 +9,10 @@ display: none;
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: space-around;
     background-color: ${Colors.bright};
     height: 8vh;
-    width: 92vw;
+    width: 92%;
     .home-mobile {
         display: flex;
         flex-direction: column;
@@ -46,7 +44,7 @@ const HomeMobile = () => {
             </div>
             <div className="home-mobile">
                 <img src={iconsMobile.User_icon} alt="user" />
-                <p>Products</p>
+                <p>Profile</p>
             </div>
             <div className="home-mobile">
                 <img src={iconsMobile.Bag_icon} alt="bag" />
